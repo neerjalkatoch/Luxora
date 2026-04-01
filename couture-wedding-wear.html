@@ -1,0 +1,249 @@
+<!DOCTYPE html><html class="light" lang="en"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400&amp;family=Manrope:wght@300;400;600;800&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "surface-container-highest": "#e2e2e2",
+              "on-tertiary": "#ffffff",
+              "tertiary": "#000000",
+              "on-error-container": "#93000a",
+              "secondary-container": "#fed488",
+              "on-tertiary-fixed-variant": "#464747",
+              "surface-container-lowest": "#ffffff",
+              "on-primary-container": "#848484",
+              "inverse-surface": "#2f3131",
+              "error-container": "#ffdad6",
+              "outline": "#7e7576",
+              "error": "#ba1a1a",
+              "surface-container-high": "#e8e8e8",
+              "surface-container": "#eeeeee",
+              "surface-dim": "#dadada",
+              "on-error": "#ffffff",
+              "on-background": "#1a1c1c",
+              "secondary-fixed-dim": "#e9c176",
+              "on-secondary": "#ffffff",
+              "secondary": "#775a19",
+              "on-tertiary-fixed": "#1b1c1c",
+              "on-secondary-container": "#785a1a",
+              "tertiary-fixed": "#e3e2e2",
+              "inverse-primary": "#c6c6c6",
+              "surface-bright": "#f9f9f9",
+              "on-primary-fixed": "#1b1b1b",
+              "primary-fixed": "#e2e2e2",
+              "tertiary-fixed-dim": "#c7c6c6",
+              "surface-container-low": "#f3f3f3",
+              "primary-container": "#1b1b1b",
+              "background": "#f9f9f9",
+              "on-surface": "#1a1c1c",
+              "on-surface-variant": "#4c4546",
+              "primary-fixed-dim": "#c6c6c6",
+              "on-tertiary-container": "#848484",
+              "secondary-fixed": "#ffdea5",
+              "primary": "#000000",
+              "on-secondary-fixed": "#261900",
+              "on-primary-fixed-variant": "#474747",
+              "inverse-on-surface": "#f1f1f1",
+              "on-primary": "#ffffff",
+              "on-secondary-fixed-variant": "#5d4201",
+              "surface-tint": "#5e5e5e",
+              "outline-variant": "#cfc4c5",
+              "surface-variant": "#e2e2e2",
+              "tertiary-container": "#1b1c1c",
+              "surface": "#f9f9f9"
+            },
+            fontFamily: {
+              "headline": ["Noto Serif"],
+              "body": ["Manrope"],
+              "label": ["Manrope"]
+            },
+            borderRadius: {"DEFAULT": "0px", "lg": "0px", "xl": "0px", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        body { font-family: 'Manrope', sans-serif; }
+        .font-serif-italic { font-family: 'Noto Serif', serif; font-style: italic; }
+        .letter-spacing-widest { letter-spacing: 0.2em; }
+    </style>
+</head>
+<body class="bg-background text-on-background antialiased selection:bg-secondary selection:text-white">
+<!-- TopNavBar from Shared Components -->
+
+<nav class="fixed top-0 w-full z-50 bg-white/90 dark:bg-zinc-950/90 backdrop-blur-xl border-b border-stone-200 dark:border-zinc-800 transition-all duration-300">
+  <div class="max-w-screen-2xl mx-auto h-24 px-6 md:px-12 flex justify-between items-center">
+    <!-- Logo -->
+    <a href="/" class="flex-shrink-0 flex items-center transition-transform hover:opacity-80 duration-500">
+      <img src="/logo.png" alt="Luxora Digital Marketing" class="h-16 md:h-20 w-auto object-contain py-2">
+    </a>
+
+    <!-- Desktop Navigation -->
+    <div class="hidden md:flex space-x-10 lg:space-x-14 items-center">
+      <a class="text-stone-500 dark:text-stone-400 hover:text-amber-700 dark:hover:text-amber-500 font-serif italic text-2xl tracking-tight transition-all duration-300" href="/">Home</a>
+      <a class="text-stone-500 dark:text-stone-400 hover:text-amber-700 dark:hover:text-amber-500 font-serif italic text-2xl tracking-tight transition-all duration-300" href="/about.html">About</a>
+      <a class="text-stone-500 dark:text-stone-400 hover:text-amber-700 dark:hover:text-amber-500 font-serif italic text-2xl tracking-tight transition-all duration-300" href="/services.html">Services</a>
+      <a class="text-stone-500 dark:text-stone-400 hover:text-amber-700 dark:hover:text-amber-500 font-serif italic text-2xl tracking-tight transition-all duration-300" href="/case-studies.html">Case Studies</a>
+      <a class="text-stone-500 dark:text-stone-400 hover:text-amber-700 dark:hover:text-amber-500 font-serif italic text-2xl tracking-tight transition-all duration-300" href="/blog.html">Blog</a>
+    </div>
+
+    <!-- Contact Button -->
+    <div class="hidden md:flex items-center">
+      <a href="/contact.html" class="bg-black dark:bg-white text-white dark:text-black px-8 py-3.5 text-[11px] font-sans font-bold uppercase tracking-[0.25em] hover:bg-amber-800 dark:hover:bg-amber-200 transition-colors duration-500 shadow-md">Contact Us</a>
+    </div>
+  </div>
+</nav>
+
+<main class="pt-24">
+<!-- Hero Section: Editorial Spread -->
+<section class="relative h-screen flex items-center justify-center overflow-hidden">
+<div class="absolute inset-0 z-0">
+<img class="w-full h-full object-cover grayscale opacity-90" data-alt="Exquisite ethereal bridal couture gown with intricate lace detailing and long train draped over a minimalist stone staircase in a sun-drenched atelier" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDuXn1M34TZrYpP62NouRrlYtvmTsvXdTMshPXIXf7PXmEi5ijlEJ-lfENO1sBIKCnuCbbz1aOkkFRaxB-c_6chy56wEJMT44DMVpJXKWUdZGq8HQHoN2uafMFwAlEpKcoAWipRumwAgPoHILP1rWyxF-ktX-_CpQib3FXTLPEmGyOJ5xa5awAMCQ3M0UNG2hYsBmpuA5AY9NOzkEpcXtExcud8TbaBp4M-pZ-9CQ4rH--QwI0JaugvTZ6TFzsA9cb4U-RCHTm9QVeG">
+</div>
+<div class="relative z-10 text-center max-w-4xl px-6">
+<p class="font-label uppercase tracking-[0.3em] text-[10px] mb-6 text-on-background/60">Couture &amp; Wedding Wear</p>
+<h1 class="font-headline text-6xl md:text-8xl lg:text-9xl tracking-tighter leading-tight mb-8">
+                    The *Alchemy* of **Eternity**
+                </h1>
+<p class="font-body text-lg md:text-xl font-light tracking-wide max-w-2xl mx-auto text-on-background/80">
+                    A dedicated editorial experience for once-in-a-lifetime masterpieces, crafted for the global elite.
+                </p>
+</div>
+<div class="absolute bottom-12 left-12 hidden lg:block">
+<div class="flex items-center space-x-4">
+<span class="w-12 h-[1px] bg-secondary"></span>
+<span class="font-label text-[10px] uppercase tracking-widest text-secondary">Seasonal Volume VI</span>
+</div>
+</div>
+</section>
+<!-- The Collection Strategy: Asymmetric Grid -->
+<section class="py-24 px-6 md:px-12 lg:px-24 bg-surface">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-end mb-24">
+<div class="lg:col-span-7">
+<img class="w-full h-[600px] object-cover" data-alt="High-fashion bridal editorial shot of a model wearing a structured satin wedding gown with dramatic sleeves in a baroque palace hallway" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAc03X_XMiJmedtyIr1gMzqJSo0lpo9QJHu6S-JHO8XjaGy6X1F63QGpRtNh7wi-X0ldxXopUfoknaGO0vUcqyBp4KV5gScI-vbK3v2u_gR_Gi_pbDBaKTJxKn4V31UqB2M90KR55e9ehLy4MFw03UxFxHjjB_7h7uLOnLTuBSQ8t87oJiJU58CHejF4vVAG1-g9RJQOwX328CBNcS3oUIoWwxE7Kdckm1ILfhn0CuWqTksU26KRJTdlEnZohO7rUDPURZIVyspB-KX">
+</div>
+<div class="lg:col-span-5 pb-12">
+<h2 class="font-headline text-4xl md:text-5xl mb-8 leading-tight">Curating *High-Intent* Legacies</h2>
+<p class="font-body text-on-surface-variant leading-relaxed mb-8">
+                        We don't just showcase garments; we curate movements. Our bespoke digital strategy for bridal sectors focuses on the psychology of prestige, blending heritage storytelling with modern conversion-focused interfaces.
+                    </p>
+<button class="font-label text-[10px] uppercase tracking-[0.2em] border-b border-primary pb-2 hover:text-secondary hover:border-secondary transition-all">Explore the methodology</button>
+</div>
+</div>
+<!-- Bento Layout for Seasonal Campaigns -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+<div class="lg:col-span-2 lg:row-span-2 bg-surface-container-lowest p-12 flex flex-col justify-between">
+<div>
+<span class="font-label text-[10px] uppercase tracking-[0.2em] text-secondary">Campaign Focus</span>
+<h3 class="font-headline text-3xl mt-4 italic">Spring *Aurelia* Collection</h3>
+</div>
+<p class="font-body text-sm text-on-surface-variant mt-12 mb-8">
+                        A digital launch strategy that generated a 300% increase in private viewing requests through tiered accessibility.
+                    </p>
+<div class="w-full h-64 overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Close-up of golden embroidery on white silk bridal fabric with soft morning light illuminating the thread texture" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA1V12APzQUuwqMxCtHEg17URrHmpO_Z1whTPsyDn5PrjCcVWCMlH5-iPDvUIXP20gfbf9L1Nqj9OPTVf9U30JRL2IXzB0KS1c1sRPGKotkrBwMtkLrq-5iBH7fiAJRSapgHfk4vGF_B2VRI7heSHTf9gKTHr3heERPxxw8TpXtO_5rqWXQtvVmbXzehGVTAGCcV5RGwiB8R026TRVVnVEPIea3sKEeP-48EZokRNRFe3HY4p2yTC4Dw95ka_eSgMsKZYF2-97zQgxb">
+</div>
+</div>
+<div class="bg-surface-container-high p-8 flex flex-col justify-center text-center">
+<span class="material-symbols-outlined text-4xl mb-4 text-secondary">diamond</span>
+<h4 class="font-label text-[10px] uppercase tracking-widest mb-2">Exclusivity</h4>
+<p class="font-body text-xs text-on-surface-variant">Invitation-only digital portals for VVIP clients.</p>
+</div>
+<div class="bg-primary text-on-primary p-8 flex flex-col justify-center text-center">
+<span class="material-symbols-outlined text-4xl mb-4">public</span>
+<h4 class="font-label text-[10px] uppercase tracking-widest mb-2">Heritage</h4>
+<p class="font-body text-xs text-on-primary/60">Bridging 40 years of couture with modern UI.</p>
+</div>
+<div class="lg:col-span-2 bg-white p-8 relative overflow-hidden group">
+<div class="relative z-10">
+<h3 class="font-headline text-2xl mb-4">The Bridal *Conciege*</h3>
+<p class="font-body text-sm text-on-surface-variant max-w-xs">A high-conversion lead generation system designed for the most discerning luxury bridal houses.</p>
+</div>
+<div class="absolute right-0 top-0 w-1/3 h-full grayscale opacity-20 group-hover:opacity-100 transition-opacity duration-700">
+<img class="w-full h-full object-cover" data-alt="Professional bridal consultant arranging the train of a wedding dress in a bright minimalist showroom" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDSN_ADYqDees9ztPVjPZJVBqC7bk-95ubBDV3IyWDpucqpx309Jth67rQcaqTW9f5xI-KahEMNRuJm4D_5mu0KzR1-UYEbJKmAv4NN6osFhDeljIuixZT1Hwg_OADsT_dJRVmYZQ4A3z4Vx0uD0-cMqA3ju8SFwzavzTSNTGv8ZD6uUDUMlPV4g3SSdEE_MfMl_Dh8_x5hEvGlPL1G1dytbyLhZJNSKgcegWXW6mXzmTus9ABn1vUe4eYZF-Qx34w3E3DXJoUu1WQL">
+</div>
+</div>
+</div>
+</section>
+<!-- High-Intent Lead Gen Section -->
+<section class="py-32 bg-white relative">
+<div class="max-w-7xl mx-auto px-6 lg:px-12 grid grid-cols-1 lg:grid-cols-2 gap-24 items-center">
+<div class="order-2 lg:order-1">
+<div class="space-y-12">
+<div>
+<h2 class="font-headline text-5xl mb-6">Request a *Private* Consultation</h2>
+<p class="font-body text-on-surface-variant text-lg">LUXORA Haute facilitates the connection between vision and creation. For brands seeking to elevate their couture presence.</p>
+</div>
+<form class="space-y-8">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<div class="space-y-2">
+<label class="font-label text-[10px] uppercase tracking-widest">Full Name</label>
+<input class="w-full bg-transparent border-0 border-b border-outline-variant focus:ring-0 focus:border-secondary placeholder:text-surface-container-highest uppercase text-sm py-4" placeholder="ALEXANDRIA V." type="text">
+</div>
+<div class="space-y-2">
+<label class="font-label text-[10px] uppercase tracking-widest">Email Address</label>
+<input class="w-full bg-transparent border-0 border-b border-outline-variant focus:ring-0 focus:border-secondary placeholder:text-surface-container-highest uppercase text-sm py-4" placeholder="AV@CLIENT.COM" type="email">
+</div>
+</div>
+<div class="space-y-2">
+<label class="font-label text-[10px] uppercase tracking-widest">The Intent</label>
+<select class="w-full bg-transparent border-0 border-b border-outline-variant focus:ring-0 focus:border-secondary text-sm py-4 appearance-none">
+<option>BECOMING A PARTNER BRAND</option>
+<option>COUTURE CAMPAIGN MANAGEMENT</option>
+<option>EDITORIAL PRODUCTION</option>
+</select>
+</div>
+<button class="w-full bg-primary text-on-primary py-5 font-label text-xs uppercase tracking-[0.3em] hover:bg-secondary transition-colors" type="submit">Submit Application</button>
+</form>
+</div>
+</div>
+<div class="order-1 lg:order-2">
+<div class="relative">
+<img class="w-full aspect-[3/4] object-cover" data-alt="Dreamy wide angle shot of a luxury garden wedding setting with white flowers and floating glass ornaments under a weeping willow tree" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBGD4_tRJxYBpWKhCTm8HeZHsWwztxl7fZdFyKjPNYM4wCfc5yw_9T5vKzXj6ZI4DEIq03CvHTyMB4d4B0Un6QTxSfOyOe9DtLfJmDAm7kUuZPSj2exYwKmWtLZUSLa6kjTpILZ3AHQXH87tzQfjb0RiiRshiKyUa3MsSSCSq2fpGJJ7WoCuGRaxO5XkyC1v0ZWjqm0R7L2porTgSh2c_k79dA_R1pPMiTvJIubzyn7M2o-NCj1F5kf8CQdJ_WO1EZzMTC4Q83Mu-He">
+<div class="absolute -bottom-12 -left-12 bg-surface p-12 hidden md:block">
+<p class="font-headline text-3xl italic">A *Legacy* of</p>
+<p class="font-headline text-4xl font-bold">EXCELLENCE</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Brand Prestige Logos (Subtle) -->
+<section class="py-24 border-t border-gray-100">
+<div class="max-w-[1920px] mx-auto px-12 text-center">
+<p class="font-label text-[10px] uppercase tracking-[0.4em] text-on-surface/40 mb-12">Trusted by Global Ateliers</p>
+<div class="flex flex-wrap justify-center items-center gap-16 md:gap-32 opacity-30 grayscale">
+<span class="font-serif italic text-2xl">Maison de Luxe</span>
+<span class="font-sans font-bold text-xl tracking-tighter">ELARA V.</span>
+<span class="font-serif text-2xl">SOLSTICE</span>
+<span class="font-sans font-light text-2xl uppercase tracking-widest">Aethel</span>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer from Shared Components -->
+<footer class="w-full border-t border-gray-100 dark:border-gray-900 bg-white dark:bg-black">
+<div class="flex flex-col md:flex-row justify-between items-center px-12 py-16 gap-8">
+<div class="text-xl font-black text-black dark:text-white">LUXORA HAUTE</div>
+<div class="flex flex-wrap justify-center gap-8">
+<a class="font-sans uppercase tracking-[0.2em] text-[10px] text-gray-400 dark:text-gray-600 hover:text-yellow-600 transition-colors duration-500" href="#">Privacy Policy</a>
+<a class="font-sans uppercase tracking-[0.2em] text-[10px] text-gray-400 dark:text-gray-600 hover:text-yellow-600 transition-colors duration-500" href="#">Terms of Service</a>
+<a class="font-sans uppercase tracking-[0.2em] text-[10px] text-gray-400 dark:text-gray-600 hover:text-yellow-600 transition-colors duration-500" href="#">Cookie Policy</a>
+<a class="font-sans uppercase tracking-[0.2em] text-[10px] text-gray-400 dark:text-gray-600 hover:text-yellow-600 transition-colors duration-500" href="#">Accessibility</a>
+</div>
+<div class="font-sans uppercase tracking-[0.2em] text-[10px] text-gray-400 dark:text-gray-600">
+                © 2024 LUXORA HAUTE. ALL RIGHTS RESERVED.
+            </div>
+</div>
+</footer>
+</body></html>

@@ -1,0 +1,236 @@
+<!DOCTYPE html><html class="light" lang="en"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>About LUXORA | The Art of Modern Elegance</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400&amp;family=Manrope:wght@200;400;500;700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "tertiary-container": "#1b1c1c",
+                        "outline-variant": "#cfc4c5",
+                        "on-secondary-fixed": "#261900",
+                        "surface-container": "#eeeeee",
+                        "surface-container-lowest": "#ffffff",
+                        "secondary": "#775a19",
+                        "surface-container-highest": "#e2e2e2",
+                        "surface-container-high": "#e8e8e8",
+                        "inverse-surface": "#2f3131",
+                        "primary-fixed": "#e2e2e2",
+                        "tertiary-fixed-dim": "#c7c6c6",
+                        "on-background": "#1a1c1c",
+                        "surface-container-low": "#f3f3f3",
+                        "on-secondary": "#ffffff",
+                        "inverse-on-surface": "#f1f1f1",
+                        "surface-dim": "#dadada",
+                        "on-tertiary": "#ffffff",
+                        "on-error-container": "#93000a",
+                        "primary-fixed-dim": "#c6c6c6",
+                        "on-secondary-fixed-variant": "#5d4201",
+                        "outline": "#7e7576",
+                        "surface-variant": "#e2e2e2",
+                        "error-container": "#ffdad6",
+                        "background": "#f9f9f9",
+                        "surface": "#f9f9f9",
+                        "on-secondary-container": "#785a1a",
+                        "secondary-container": "#fed488",
+                        "on-tertiary-fixed": "#1b1c1c",
+                        "tertiary-fixed": "#e3e2e2",
+                        "surface-tint": "#5e5e5e",
+                        "inverse-primary": "#c6c6c6",
+                        "on-surface": "#1a1c1c",
+                        "on-primary-fixed-variant": "#474747",
+                        "on-primary": "#ffffff",
+                        "on-tertiary-fixed-variant": "#464747",
+                        "on-primary-container": "#848484",
+                        "surface-bright": "#f9f9f9",
+                        "on-error": "#ffffff",
+                        "primary-container": "#1b1b1b",
+                        "error": "#ba1a1a",
+                        "secondary-fixed": "#ffdea5",
+                        "tertiary": "#000000",
+                        "on-primary-fixed": "#1b1b1b",
+                        "secondary-fixed-dim": "#e9c176",
+                        "on-surface-variant": "#4c4546",
+                        "primary": "#000000",
+                        "on-tertiary-container": "#848484"
+                    },
+                    fontFamily: {
+                        "headline": ["Noto Serif"],
+                        "body": ["Manrope"],
+                        "label": ["Manrope"]
+                    },
+                    borderRadius: {"DEFAULT": "0px", "lg": "0px", "xl": "0px", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        body { font-family: 'Manrope', sans-serif; }
+        .font-serif { font-family: 'Noto Serif', serif; }
+        .glass-nav {
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface selection:bg-secondary selection:text-white">
+<!-- TopNavBar -->
+
+<nav class="fixed top-0 w-full z-50 bg-white/90 dark:bg-zinc-950/90 backdrop-blur-xl border-b border-stone-200 dark:border-zinc-800 transition-all duration-300">
+  <div class="max-w-screen-2xl mx-auto h-24 px-6 md:px-12 flex justify-between items-center">
+    <!-- Logo -->
+    <a href="/" class="flex-shrink-0 flex items-center transition-transform hover:opacity-80 duration-500">
+      <img src="/logo.png" alt="Luxora Digital Marketing" class="h-16 md:h-20 w-auto object-contain py-2">
+    </a>
+
+    <!-- Desktop Navigation -->
+    <div class="hidden md:flex space-x-10 lg:space-x-14 items-center">
+      <a class="text-stone-500 dark:text-stone-400 hover:text-amber-700 dark:hover:text-amber-500 font-serif italic text-2xl tracking-tight transition-all duration-300" href="/">Home</a>
+      <a class="text-stone-900 dark:text-white border-b border-stone-900 dark:border-white pb-1 font-serif italic text-2xl tracking-tight transition-all duration-300" href="/about.html">About</a>
+      <a class="text-stone-500 dark:text-stone-400 hover:text-amber-700 dark:hover:text-amber-500 font-serif italic text-2xl tracking-tight transition-all duration-300" href="/services.html">Services</a>
+      <a class="text-stone-500 dark:text-stone-400 hover:text-amber-700 dark:hover:text-amber-500 font-serif italic text-2xl tracking-tight transition-all duration-300" href="/case-studies.html">Case Studies</a>
+      <a class="text-stone-500 dark:text-stone-400 hover:text-amber-700 dark:hover:text-amber-500 font-serif italic text-2xl tracking-tight transition-all duration-300" href="/blog.html">Blog</a>
+    </div>
+
+    <!-- Contact Button -->
+    <div class="hidden md:flex items-center">
+      <a href="/contact.html" class="bg-black dark:bg-white text-white dark:text-black px-8 py-3.5 text-[11px] font-sans font-bold uppercase tracking-[0.25em] hover:bg-amber-800 dark:hover:bg-amber-200 transition-colors duration-500 shadow-md">Contact Us</a>
+    </div>
+  </div>
+</nav>
+
+<main class="pt-32">
+<!-- Hero Section: The Art of Modern Elegance -->
+<section class="px-12 mb-48">
+<div class="max-w-screen-2xl mx-auto grid grid-cols-1 md:grid-cols-12 gap-12 items-end">
+<div class="md:col-span-8">
+<span class="label-sm font-label uppercase tracking-[0.3em] text-secondary mb-6 block">Legacy &amp; Vision</span>
+<h1 class="text-6xl md:text-8xl font-serif leading-tight">
+                        The Art *of* <br>
+<span class="font-light italic">Modern Elegance</span>
+</h1>
+</div>
+<div class="md:col-span-4 pb-4">
+<p class="font-body text-on-surface-variant text-lg leading-relaxed max-w-sm">
+                        Redefining the digital landscape through architectural precision and a relentless pursuit of prestige.
+                    </p>
+</div>
+</div>
+<div class="mt-24 w-full h-[716px] relative overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Stunning architectural detail of a modern minimalist building with sharp shadows and high contrast black and white lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuApFuuyFxu_-ZKh4V8kyT0JD2s7t4rAhRxSlmig3tIWKG4I9st6gHALORYptrCFmQibKF1YCX2mzIEipJ_SqHklNJF6Mm7US_fzSmsUIDsodfHM6LV3x_Kt95HT2J-pjs-WVvYAlIdnW8E5UfaETvzkvsbxj27v9JZI9H6uwIW4FHM4f2CPUK05eFFHDFKQLe9bcPXb_qB0H5yfL56bOIgAYGW9s31-bhnOohyiMThLMVijmQsuJs2NLi7avyC0ebJ7kHpexZbNd7fv">
+<div class="absolute inset-0 bg-gradient-to-t from-primary/20 to-transparent"></div>
+</div>
+</section>
+<!-- Manifesto Quote -->
+<section class="px-12 mb-64 flex justify-center">
+<div class="max-w-4xl text-center">
+<h2 class="text-4xl md:text-6xl font-serif italic font-light leading-snug">
+                    "Luxury is not about selling more. It’s about being <span class="font-bold not-italic">desired more.</span>"
+                </h2>
+<div class="mt-8 h-px w-24 bg-secondary mx-auto"></div>
+</div>
+</section>
+<!-- The Architectural Approach -->
+<section class="px-12 py-32 bg-surface-container-low mb-48">
+<div class="max-w-screen-2xl mx-auto">
+<div class="mb-24">
+<span class="label-sm font-label uppercase tracking-[0.3em] text-secondary mb-4 block">Our Methodology</span>
+<h2 class="text-5xl font-serif">The Architectural Approach</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-24">
+<!-- Attract -->
+<div class="flex flex-col">
+<span class="font-serif text-8xl text-outline-variant/30 mb-8">01</span>
+<h3 class="text-2xl font-serif font-bold mb-6">Attract</h3>
+<p class="font-body text-on-surface-variant leading-relaxed">
+                            We curate visual experiences that command immediate attention, leveraging high-contrast aesthetics and intentional whitespace to create an aura of exclusivity.
+                        </p>
+</div>
+<!-- Position -->
+<div class="flex flex-col">
+<span class="font-serif text-8xl text-outline-variant/30 mb-8">02</span>
+<h3 class="text-2xl font-serif font-bold mb-6">Position</h3>
+<p class="font-body text-on-surface-variant leading-relaxed">
+                            Strategic narrative framing that elevates your brand from a service provider to a cultural authority, ensuring you occupy the highest tier of market desire.
+                        </p>
+</div>
+<!-- Convert -->
+<div class="flex flex-col">
+<span class="font-serif text-8xl text-outline-variant/30 mb-8">03</span>
+<h3 class="text-2xl font-serif font-bold mb-6">Convert</h3>
+<p class="font-body text-on-surface-variant leading-relaxed">
+                            Precision-engineered interfaces designed for a seamless, frictionless journey that transforms aspiration into definitive brand loyalty.
+                        </p>
+</div>
+</div>
+</div>
+</section>
+<!-- Founder's Note -->
+<section class="px-12 mb-64">
+<div class="max-w-screen-2xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-24 items-center">
+<div class="relative">
+<img class="w-full aspect-[3/4] object-cover" data-alt="Professional portrait of a sophisticated woman, Madhu Bala, in high-end minimalist attire against a clean neutral background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBWkOoJO0lP5W9Hwhx1xjLFjr0oqWv86B8ypYEDzB4TQVjjycgHc0tAp1QqnvhUHDeP4LwMkqt58M2SlLjzyeWGE6gaC-mqfj7MX1T9r0CwYYJrkViYkUhZsZoZ2VcD_gbUEtLO1cG0veckIw24eKQP7Qin0_jxs2UZv7GpfVnV_R_tBnj8rTPBV1RkNRGz-6_mu8uuxZP-oW4U2nN-yKfOmrFoH_FDiDuFeSem9Ol0pe2VOxTZigHi1ATbLxPMHMj26oYcDmitkS-j">
+<!-- Editorial Overlay -->
+<div class="absolute -bottom-12 -right-12 bg-surface-container-lowest p-12 max-w-xs glass-nav">
+<span class="font-serif italic text-2xl">The Visionary</span>
+<p class="font-label uppercase text-[10px] tracking-widest mt-2 text-stone-500">Established 2018</p>
+</div>
+</div>
+<div class="flex flex-col justify-center">
+<span class="label-sm font-label uppercase tracking-[0.3em] text-secondary mb-6 block">Founder's Note</span>
+<h2 class="text-4xl font-serif mb-12">A Letter from <br><span class="italic font-light">Madhu Bala</span></h2>
+<div class="space-y-8 font-body text-lg text-on-surface-variant leading-relaxed">
+<p>
+                            In an era of digital noise, silence is the ultimate luxury. At Luxora, we believe that true elegance is found in the subtraction of the unnecessary.
+                        </p>
+<p>
+                            Our work is not merely about aesthetics; it is about building enduring legacies. We approach every pixel and every line of code as an architectural element designed to withstand the fleeting nature of trends.
+                        </p>
+<p>
+                            We don't just build brands. We curate experiences for those who understand that value is measured in the depth of desire, not the volume of sales.
+                        </p>
+</div>
+<div class="mt-16">
+<img class="h-20 w-auto opacity-80" data-alt="Elegant handwritten script signature of Madhu Bala in black ink" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDj72OYTiijoBBAVGkhNiu1KtPyVMCj6nHH5s5XEUqkPSr6IwwDuw28Essh27d6iiaNGNLEFTWaAWoo0e8ZKXmj_It9v-OOVhw4VZVp7jB7QD4DsVCjDhk5lmNfYUoObfjEaO7Fhbq4QbVuFcruCPlKaYOZa8KFO0B7pBopX3L76oHny1vH1hr7A9Ad9mCiE6cc_36chmTPhxxQjIoq5eiFfVzz-L-efvAm0zvDZ4BE6lMI6aoBjTUBPmYQKCslx41blhaZXJySFZ6F">
+<p class="font-label uppercase text-xs tracking-widest mt-4">CEO &amp; Creative Director</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Prestige Call to Action -->
+<section class="px-12 mb-48 text-center">
+<div class="max-w-4xl mx-auto py-32 border-t border-outline-variant/30">
+<h2 class="text-5xl font-serif mb-12">Elevate Your Presence</h2>
+<button class="bg-primary text-on-primary px-16 py-6 font-label uppercase tracking-[0.2em] text-sm hover:bg-stone-800 transition-all duration-300">
+                    Inquire for Collaboration
+                </button>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full border-t border-stone-200 dark:border-stone-800 bg-stone-100 dark:bg-stone-900">
+<div class="flex flex-col md:flex-row justify-between items-center px-12 py-16 w-full max-w-screen-2xl mx-auto">
+<div class="mb-8 md:mb-0">
+<span class="font-serif text-xl tracking-[0.3em] text-stone-900 dark:text-stone-50">LUXORA</span>
+</div>
+<div class="flex gap-8 mb-8 md:mb-0">
+<a class="font-sans uppercase text-[10px] tracking-[0.2em] font-medium text-stone-400 dark:text-stone-500 hover:text-stone-900 dark:hover:text-stone-50 transition-all duration-300 underline underline-offset-4" href="#">Privacy Policy</a>
+<a class="font-sans uppercase text-[10px] tracking-[0.2em] font-medium text-stone-400 dark:text-stone-500 hover:text-stone-900 dark:hover:text-stone-50 transition-all duration-300" href="#">Terms of Service</a>
+<a class="font-sans uppercase text-[10px] tracking-[0.2em] font-medium text-stone-400 dark:text-stone-500 hover:text-stone-900 dark:hover:text-stone-50 transition-all duration-300" href="#">Careers</a>
+<a class="font-sans uppercase text-[10px] tracking-[0.2em] font-medium text-stone-400 dark:text-stone-500 hover:text-stone-900 dark:hover:text-stone-50 transition-all duration-300" href="#">Press</a>
+</div>
+<div class="font-sans uppercase text-[10px] tracking-[0.2em] font-medium text-stone-500 dark:text-stone-400">
+                © 2024 LUXORA. ALL RIGHTS RESERVED.
+            </div>
+</div>
+</footer>
+</body></html>

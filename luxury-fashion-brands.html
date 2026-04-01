@@ -1,0 +1,245 @@
+<!DOCTYPE html><html class="light" lang="en"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>LUXORA | Luxury Fashion Strategy</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400&amp;family=Manrope:wght@300;400;600;800&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "surface-container-highest": "#e2e2e2",
+                        "on-tertiary": "#ffffff",
+                        "tertiary": "#000000",
+                        "on-error-container": "#93000a",
+                        "secondary-container": "#fed488",
+                        "on-tertiary-fixed-variant": "#464747",
+                        "surface-container-lowest": "#ffffff",
+                        "on-primary-container": "#848484",
+                        "inverse-surface": "#2f3131",
+                        "error-container": "#ffdad6",
+                        "outline": "#7e7576",
+                        "error": "#ba1a1a",
+                        "surface-container-high": "#e8e8e8",
+                        "surface-container": "#eeeeee",
+                        "surface-dim": "#dadada",
+                        "on-error": "#ffffff",
+                        "on-background": "#1a1c1c",
+                        "secondary-fixed-dim": "#e9c176",
+                        "on-secondary": "#ffffff",
+                        "secondary": "#775a19",
+                        "on-tertiary-fixed": "#1b1c1c",
+                        "on-secondary-container": "#785a1a",
+                        "tertiary-fixed": "#e3e2e2",
+                        "inverse-primary": "#c6c6c6",
+                        "surface-bright": "#f9f9f9",
+                        "on-primary-fixed": "#1b1b1b",
+                        "primary-fixed": "#e2e2e2",
+                        "tertiary-fixed-dim": "#c7c6c6",
+                        "surface-container-low": "#f3f3f3",
+                        "primary-container": "#1b1b1b",
+                        "background": "#f9f9f9",
+                        "on-surface": "#1a1c1c",
+                        "on-surface-variant": "#4c4546",
+                        "primary-fixed-dim": "#c6c6c6",
+                        "on-tertiary-container": "#848484",
+                        "secondary-fixed": "#ffdea5",
+                        "primary": "#000000",
+                        "on-secondary-fixed": "#261900",
+                        "on-primary-fixed-variant": "#474747",
+                        "inverse-on-surface": "#f1f1f1",
+                        "on-primary": "#ffffff",
+                        "on-secondary-fixed-variant": "#5d4201",
+                        "surface-tint": "#5e5e5e",
+                        "outline-variant": "#cfc4c5",
+                        "surface-variant": "#e2e2e2",
+                        "tertiary-container": "#1b1c1c",
+                        "surface": "#f9f9f9"
+                    },
+                    fontFamily: {
+                        "headline": ["Noto Serif"],
+                        "body": ["Manrope"],
+                        "label": ["Manrope"]
+                    },
+                    borderRadius: { "DEFAULT": "0px", "lg": "0px", "xl": "0px", "full": "9999px" },
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            font-family: 'Manrope', sans-serif;
+            background-color: #f9f9f9;
+        }
+        h1, h2, h3 {
+            font-family: 'Noto Serif', serif;
+        }
+        .editorial-spacing {
+            padding-top: 8.5rem;
+            padding-bottom: 8.5rem;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface">
+<!-- TopNavBar -->
+
+<nav class="fixed top-0 w-full z-50 bg-white/90 dark:bg-zinc-950/90 backdrop-blur-xl border-b border-stone-200 dark:border-zinc-800 transition-all duration-300">
+  <div class="max-w-screen-2xl mx-auto h-24 px-6 md:px-12 flex justify-between items-center">
+    <!-- Logo -->
+    <a href="/" class="flex-shrink-0 flex items-center transition-transform hover:opacity-80 duration-500">
+      <img src="/logo.png" alt="Luxora Digital Marketing" class="h-16 md:h-20 w-auto object-contain py-2">
+    </a>
+
+    <!-- Desktop Navigation -->
+    <div class="hidden md:flex space-x-10 lg:space-x-14 items-center">
+      <a class="text-stone-500 dark:text-stone-400 hover:text-amber-700 dark:hover:text-amber-500 font-serif italic text-2xl tracking-tight transition-all duration-300" href="/">Home</a>
+      <a class="text-stone-500 dark:text-stone-400 hover:text-amber-700 dark:hover:text-amber-500 font-serif italic text-2xl tracking-tight transition-all duration-300" href="/about.html">About</a>
+      <a class="text-stone-500 dark:text-stone-400 hover:text-amber-700 dark:hover:text-amber-500 font-serif italic text-2xl tracking-tight transition-all duration-300" href="/services.html">Services</a>
+      <a class="text-stone-500 dark:text-stone-400 hover:text-amber-700 dark:hover:text-amber-500 font-serif italic text-2xl tracking-tight transition-all duration-300" href="/case-studies.html">Case Studies</a>
+      <a class="text-stone-500 dark:text-stone-400 hover:text-amber-700 dark:hover:text-amber-500 font-serif italic text-2xl tracking-tight transition-all duration-300" href="/blog.html">Blog</a>
+    </div>
+
+    <!-- Contact Button -->
+    <div class="hidden md:flex items-center">
+      <a href="/contact.html" class="bg-black dark:bg-white text-white dark:text-black px-8 py-3.5 text-[11px] font-sans font-bold uppercase tracking-[0.25em] hover:bg-amber-800 dark:hover:bg-amber-200 transition-colors duration-500 shadow-md">Contact Us</a>
+    </div>
+  </div>
+</nav>
+
+<main>
+<!-- Hero Section: Cinematic Luxury -->
+<section class="relative h-screen flex items-center justify-center overflow-hidden">
+<div class="absolute inset-0 w-full h-full">
+<img class="w-full h-full object-cover grayscale brightness-75" data-alt="Cinematic high-fashion editorial photo of a man and woman in monochromatic black attire standing in a minimalist concrete gallery with harsh dramatic shadows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCHJ6pbhHbF1QY32mvSE7_4MXo31uTkggJWehEGqJmmbbc--z8aSwhh2XEvEZYM5u-8u2-Wnl2X612Wd3RAtQOsgpttAsS3dt4gKPUP2yHH41TqjzrRoLZaSz9nyhNg-Sq1-LAPOSm1887WgFQIyK-kRzqmNOvdZN7DHheVbwetPBQ6T6vvVGURqOLhsemMRuwxRAf9c3fTb_hal6QcBxtEcEnWgPLCKs7TXMuOIo-gGr1Z7UpjqTi_TdBGThaBmibLoCv1nqYYNhe9">
+</div>
+<div class="relative z-10 text-center px-6">
+<p class="font-label uppercase tracking-[0.4em] text-white text-xs mb-6">Sector Specialization</p>
+<h1 class="text-5xl md:text-8xl text-white font-headline leading-tight max-w-5xl mx-auto">
+                    Luxury Fashion <br>
+<span class="italic font-normal">for</span> **Men** &amp; **Women**
+                </h1>
+</div>
+<div class="absolute bottom-12 left-12">
+<div class="w-16 h-[1px] bg-white opacity-40"></div>
+</div>
+</section>
+<!-- Section: Strategic Positioning -->
+<section class="editorial-spacing px-12 max-w-[1920px] mx-auto bg-surface">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-12 items-center">
+<div class="md:col-span-5 space-y-12">
+<span class="font-label uppercase tracking-[0.2em] text-secondary text-sm">01 — Core Pillar</span>
+<h2 class="text-4xl md:text-6xl font-headline leading-none">Strategic <span class="italic">Positioning</span></h2>
+<p class="text-on-surface-variant font-body text-lg leading-relaxed max-w-md">
+                        In the realm of high-end fashion, positioning is not about price—it is about the curation of desire. We sculpt the narrative landscape for global labels, ensuring their heritage is preserved while their future is pioneered.
+                    </p>
+<div class="pt-6">
+<button class="border-b border-primary pb-1 font-label uppercase tracking-widest text-xs">Explore Methodology</button>
+</div>
+</div>
+<div class="md:col-span-7 relative">
+<div class="bg-surface-container-high w-full aspect-[4/5] relative">
+<img class="w-full h-full object-cover grayscale mix-blend-multiply opacity-90" data-alt="Minimalist top-down shot of luxury designer accessories, leather goods, and high-end textiles arranged in a clean editorial layout on white surface" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDI0H8hV-CO-LLUVhm8_fzDp2hPFaI_bgKoAV4Hdc3_gl24L_VTauBFMhLm3mXLPsRquViEy2DYGnPbh0KSmDoGdW2A6LFbcsEF5UFg2TeOw90CWosSKIMOyFfu5mQD3gRR5tRmc9hNNiG_SN6Mt3LEgwhxsseGmW0e-Kl2oPn4W2D-xl9foQR7SayJpgpTAtHm6jmmkxc1RV6VHNTJkl9hSYzI9UfWzPBEdLuqVsqbUt1SJuFMW97lDOy0l36t7wRyeae00wFqphJ2">
+<!-- Floating Tonal Layer -->
+<div class="absolute -bottom-10 -left-10 p-12 bg-surface-container-lowest shadow-sm hidden md:block max-w-xs">
+<p class="font-body text-sm italic">"Luxury is the ease of a t-shirt in a very expensive dress." — Karl Lagerfeld</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Section: Audience Acquisition (Bento Layout) -->
+<section class="editorial-spacing px-12 bg-surface-container-low">
+<div class="max-w-[1920px] mx-auto">
+<div class="mb-24 text-center">
+<span class="font-label uppercase tracking-[0.2em] text-secondary text-sm block mb-4">02 — Global Reach</span>
+<h2 class="text-4xl md:text-7xl font-headline italic">Audience <span class="not-italic font-bold">Acquisition</span></h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Card 1 -->
+<div class="bg-surface-container-lowest p-12 flex flex-col justify-between h-[500px]">
+<div>
+<span class="material-symbols-outlined text-4xl mb-8">public</span>
+<h3 class="text-2xl font-headline mb-6">Global Market Penetration</h3>
+<p class="font-body text-on-surface-variant leading-relaxed">Connecting heritage labels with burgeoning luxury markets across EMEA and Asia-Pacific through localized storytelling.</p>
+</div>
+<p class="font-label text-[10px] tracking-widest text-secondary">01 / ANALYTICS</p>
+</div>
+<!-- Card 2: Visual Dominant -->
+<div class="bg-primary overflow-hidden h-[500px] relative group">
+<img class="w-full h-full object-cover opacity-60 transition-transform duration-700 group-hover:scale-105" data-alt="Model in high-fashion avant-garde clothing walking through a grand historical European architectural hallway with soft golden light filtering through windows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA485x-BGqXUeUakywHGy0fmCbxCVZ0MXXxU1J8ck-mV5RAWMfrR8fCdinqdvY-SAw4Jh1E4poesi_4aban8NWuDFv9tN5a4Phkl45UioKRIgzk5VEeewmzmJfOuPH9zOhRocy-x2XtX_hUcVs8oAYGGokbDXa5RIk2gBdsUbpB2tmr5pqVzawZ7_iXJPpwZRUVrzh4qh2x2NkFGKTcUCqU3y6pN27x6Rb3zeBtgj9ZSLW2u_JbnMbAQgIH_97xmphA85kT9cPhOAEr">
+<div class="absolute inset-0 p-12 flex flex-col justify-end">
+<h3 class="text-white text-3xl font-headline leading-tight">High-Value <br>Retention</h3>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="bg-surface-container-lowest p-12 flex flex-col justify-between h-[500px]">
+<div>
+<span class="material-symbols-outlined text-4xl mb-8">auto_graph</span>
+<h3 class="text-2xl font-headline mb-6">Psychographic Targeting</h3>
+<p class="font-body text-on-surface-variant leading-relaxed">Moving beyond demographics to target the lifestyle, values, and aesthetic preferences of the ultra-high-net-worth individual.</p>
+</div>
+<p class="font-label text-[10px] tracking-widest text-secondary">03 / PRECISION</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Section: Digital Storytelling (Asymmetric Layout) -->
+<section class="editorial-spacing px-12 max-w-[1920px] mx-auto bg-surface">
+<div class="flex flex-col md:flex-row gap-24 items-start">
+<div class="w-full md:w-1/2">
+<img class="w-full aspect-square object-cover grayscale shadow-2xl" data-alt="Extreme close up of luxury fabric texture and detailed stitching on a designer garment, emphasizing craft and high-quality materials" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBzJPyvktLTOMsOBRENqwn25vFoR-fNxNey11vgtGi1P49Rj998TVGprBw-cRdFXRUcjBPr8XAX5r0fh1dSoF-Xy70ZPlfHkgbctPaaFFtLXtEK69Sqkrwgj3Gj5mHhWcRXyErcL0ou7J0wCjr2_tErzC6gmvGMXEU7hWKMpOnXf_vynibE_pI37SHFTIkRA-VbWoY5WjNZfmDMeJnVXkA-Vbh6AcOr5oO61z9CF1w3Q3_gkeZfBbGmboKh8bq2xfd_Wj65oJ78Pd8C">
+</div>
+<div class="w-full md:w-1/2 md:mt-48 space-y-12">
+<span class="font-label uppercase tracking-[0.2em] text-secondary text-sm">03 — Digital Narrative</span>
+<h2 class="text-4xl md:text-6xl font-headline leading-tight">High-End <span class="italic">Digital</span> Storytelling</h2>
+<p class="text-on-surface-variant font-body text-lg leading-relaxed">
+                        The screen is our canvas. We create immersive digital experiences that mirror the haptic luxury of a physical boutique. From interactive brand films to seamless virtual appointments, every touchpoint is a statement of excellence.
+                    </p>
+<ul class="space-y-6 pt-6">
+<li class="flex items-center gap-6 border-b border-surface-container pb-6">
+<span class="font-label text-secondary">01</span>
+<span class="font-body uppercase tracking-widest text-sm">Interactive Lookbooks</span>
+</li>
+<li class="flex items-center gap-6 border-b border-surface-container pb-6">
+<span class="font-label text-secondary">02</span>
+<span class="font-body uppercase tracking-widest text-sm">Cinematic Social Content</span>
+</li>
+<li class="flex items-center gap-6">
+<span class="font-label text-secondary">03</span>
+<span class="font-body uppercase tracking-widest text-sm">Bespoke E-Commerce Journeys</span>
+</li>
+</ul>
+</div>
+</div>
+</section>
+<!-- Section: Call to Action -->
+<section class="py-32 px-12 bg-white text-center border-t border-surface-container-high">
+<h2 class="text-4xl md:text-6xl font-headline mb-12">Elevate Your Label <span class="italic">to</span> Heritage Status</h2>
+<button class="bg-primary text-on-primary px-16 py-6 font-label uppercase tracking-widest text-sm hover:opacity-80 transition-all">
+                Partner with Luxora
+            </button>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full border-t border-gray-100 dark:border-gray-900 bg-white dark:bg-black">
+<div class="flex flex-col md:flex-row justify-between items-center px-12 py-16 gap-8 max-w-[1920px] mx-auto">
+<div class="text-xl font-black text-black dark:text-white uppercase tracking-tighter">LUXORA</div>
+<div class="flex flex-wrap justify-center gap-8">
+<a class="font-sans uppercase tracking-[0.2em] text-[10px] text-gray-400 dark:text-gray-600 hover:text-yellow-600 transition-colors duration-500" href="#">Privacy Policy</a>
+<a class="font-sans uppercase tracking-[0.2em] text-[10px] text-gray-400 dark:text-gray-600 hover:text-yellow-600 transition-colors duration-500" href="#">Terms of Service</a>
+<a class="font-sans uppercase tracking-[0.2em] text-[10px] text-gray-400 dark:text-gray-600 hover:text-yellow-600 transition-colors duration-500" href="#">Cookie Policy</a>
+<a class="font-sans uppercase tracking-[0.2em] text-[10px] text-gray-400 dark:text-gray-600 hover:text-yellow-600 transition-colors duration-500" href="#">Accessibility</a>
+</div>
+<div class="font-sans uppercase tracking-[0.2em] text-[10px] text-gray-400 dark:text-gray-600">
+                © 2024 LUXORA HAUTE. ALL RIGHTS RESERVED.
+            </div>
+</div>
+</footer>
+</body></html>

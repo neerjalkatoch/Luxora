@@ -1,0 +1,251 @@
+<!DOCTYPE html><html class="light" lang="en"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400&amp;family=Manrope:wght@300;400;600;800&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "surface-container-highest": "#e2e2e2",
+              "on-tertiary": "#ffffff",
+              "tertiary": "#000000",
+              "on-error-container": "#93000a",
+              "secondary-container": "#fed488",
+              "on-tertiary-fixed-variant": "#464747",
+              "surface-container-lowest": "#ffffff",
+              "on-primary-container": "#848484",
+              "inverse-surface": "#2f3131",
+              "error-container": "#ffdad6",
+              "outline": "#7e7576",
+              "error": "#ba1a1a",
+              "surface-container-high": "#e8e8e8",
+              "surface-container": "#eeeeee",
+              "surface-dim": "#dadada",
+              "on-error": "#ffffff",
+              "on-background": "#1a1c1c",
+              "secondary-fixed-dim": "#e9c176",
+              "on-secondary": "#ffffff",
+              "secondary": "#775a19",
+              "on-tertiary-fixed": "#1b1c1c",
+              "on-secondary-container": "#785a1a",
+              "tertiary-fixed": "#e3e2e2",
+              "inverse-primary": "#c6c6c6",
+              "surface-bright": "#f9f9f9",
+              "on-primary-fixed": "#1b1b1b",
+              "primary-fixed": "#e2e2e2",
+              "tertiary-fixed-dim": "#c7c6c6",
+              "surface-container-low": "#f3f3f3",
+              "primary-container": "#1b1b1b",
+              "background": "#f9f9f9",
+              "on-surface": "#1a1c1c",
+              "on-surface-variant": "#4c4546",
+              "primary-fixed-dim": "#c6c6c6",
+              "on-tertiary-container": "#848484",
+              "secondary-fixed": "#ffdea5",
+              "primary": "#000000",
+              "on-secondary-fixed": "#261900",
+              "on-primary-fixed-variant": "#474747",
+              "inverse-on-surface": "#f1f1f1",
+              "on-primary": "#ffffff",
+              "on-secondary-fixed-variant": "#5d4201",
+              "surface-tint": "#5e5e5e",
+              "outline-variant": "#cfc4c5",
+              "surface-variant": "#e2e2e2",
+              "tertiary-container": "#1b1c1c",
+              "surface": "#f9f9f9"
+            },
+            fontFamily: {
+              "headline": ["Noto Serif"],
+              "body": ["Manrope"],
+              "label": ["Manrope"]
+            },
+            borderRadius: {"DEFAULT": "0px", "lg": "0px", "xl": "0px", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        body { font-family: 'Manrope', sans-serif; background-color: #f9f9f9; color: #1a1c1c; }
+        .font-serif { font-family: 'Noto Serif', serif; }
+        .kerning-wide { letter-spacing: 0.2em; }
+    </style>
+</head>
+<body class="bg-background text-on-background">
+<!-- TopNavBar -->
+<header class="fixed top-0 w-full z-50 border-b border-gray-100 dark:border-gray-900 bg-white/80 dark:bg-black/80 backdrop-blur-xl">
+<nav class="flex justify-between items-center px-12 py-6 max-w-[1920px] mx-auto">
+<div class="text-2xl font-black tracking-tighter text-black dark:text-white">LUXORA</div>
+<div class="hidden md:flex gap-12 items-center">
+<a class="font-serif italic text-lg tracking-tight text-black dark:text-white border-b-2 border-yellow-600 pb-1" href="/">Home</a>
+<a class="font-serif italic text-lg tracking-tight text-gray-500 dark:text-gray-400 hover:text-black dark:hover:text-white transition-colors" href="/about.html">About</a>
+<a class="font-serif italic text-lg tracking-tight text-gray-500 dark:text-gray-400 hover:text-black dark:hover:text-white transition-colors" href="/services.html">Services</a>
+<a class="font-serif italic text-lg tracking-tight text-gray-500 dark:text-gray-400 hover:text-black dark:hover:text-white transition-colors" href="/case-studies.html">Case Studies</a>
+<a class="font-serif italic text-lg tracking-tight text-gray-500 dark:text-gray-400 hover:text-black dark:hover:text-white transition-colors" href="/blog.html">Blog</a>
+</div>
+<a href="/contact.html" class="bg-primary text-on-primary px-8 py-3 text-xs uppercase tracking-widest font-bold hover:opacity-70 transition-opacity duration-300">Contact</a>
+</nav>
+</header>
+<main class="pt-24">
+<!-- Hero Section: Artisanal Craftsmanship -->
+<section class="relative h-[921px] w-full flex items-center justify-center overflow-hidden">
+<div class="absolute inset-0 z-0">
+<img class="w-full h-full object-cover" data-alt="Close-up of a master tailor's hands meticulously stitching a charcoal grey wool suit jacket with dramatic side lighting and shallow depth of field" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD56R-BpYHG2RQigb4i6an8dxwvaxbx2jjCWkYKz3p2R4Ntigcx9kj6PCyxKmVT5eDVnrTh-tsaWFeMB3ez4xJSGxawcbpUnZJVREeUAADLTNdgwjaB0PPPH6L9yw-BakL_DbT9RRfEhxY9bUWjXH4-_FE7HhTbtqneHfdi4RTlhVUS0OtDifmR-wesXY8bnZlJVh2G_4eYOBwc2U2jxaDOhaQEvdj1cNmONZ1tCL_9jmI2K1vlvsZ1T2jbIIip3lVEO2Yd69rdwjdM">
+<div class="absolute inset-0 bg-black/40"></div>
+</div>
+<div class="relative z-10 text-center max-w-5xl px-6">
+<span class="label-md uppercase tracking-[0.3em] text-white mb-6 block">The Bespoke Sector</span>
+<h1 class="font-serif text-6xl md:text-8xl text-white leading-tight">
+                    Precision *in* <span class="font-normal italic">Every</span> **Thread**
+                </h1>
+<p class="mt-8 text-white/80 font-body text-xl max-w-2xl mx-auto leading-relaxed">
+                    Elevating tailoring houses through editorial storytelling and strategic conversion frameworks designed for the world's most discerning clientele.
+                </p>
+</div>
+<!-- Floating Editorial Box (Asymmetric) -->
+<div class="absolute bottom-12 right-12 md:bottom-24 md:right-24 bg-surface-container-lowest/10 backdrop-blur-2xl p-10 max-w-sm border border-white/10 hidden md:block">
+<h3 class="font-serif text-2xl text-white mb-4 italic">The Heritage Pulse</h3>
+<p class="text-white/70 text-sm leading-relaxed mb-6">Preserving centuries-old techniques while navigating the digital landscape of modern luxury consumption.</p>
+<div class="h-px bg-secondary w-12"></div>
+</div>
+</section>
+<!-- Heritage Storytelling Section -->
+<section class="py-32 px-12 max-w-[1920px] mx-auto bg-surface">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-16 items-center">
+<div class="md:col-span-5">
+<h2 class="font-serif text-5xl md:text-6xl text-primary leading-tight mb-10">
+                        The Art of <br><span class="italic text-secondary">Narrative Tailoring</span>
+</h2>
+<p class="text-on-surface-variant text-lg leading-loose mb-8">
+                        We transform technical mastery into emotional resonance. Your house's history is not just a timeline; it is a pedigree that justifies the high-ticket investment of your patrons.
+                    </p>
+<div class="space-y-6">
+<div class="flex items-start gap-4">
+<span class="text-secondary font-serif italic text-2xl">01</span>
+<div>
+<h4 class="font-bold uppercase text-xs tracking-widest mb-1">Ancestral Archives</h4>
+<p class="text-sm text-on-surface-variant">Digitizing the physical heritage of the atelier without losing its soul.</p>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<span class="text-secondary font-serif italic text-2xl">02</span>
+<div>
+<h4 class="font-bold uppercase text-xs tracking-widest mb-1">Artisan Portraits</h4>
+<p class="text-sm text-on-surface-variant">Spotlighting the hands that craft the garments to humanize the luxury.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="md:col-span-7 grid grid-cols-2 gap-4">
+<div class="pt-24">
+<img class="w-full aspect-[2/3] object-cover grayscale hover:grayscale-0 transition-all duration-700" data-alt="Atmospheric shot of a vintage tailor shop with rolls of premium fabric, antique measuring tools, and a warm wooden interior" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAl_cMjkrLtj4sSRmdyDmvw_BTfBr0WQld8lKHM_mhOYmuGtnLf5bLsHKUkvYcOFVgXzuLumk1stmjeEAYqKFQ2rl877sLwwji2By_Kn-MK0MTDxW_lqh8NlEPiANijGxjcN3btpvZOgpMmysX--we7UYJ-YjdPL_wuFl9-AtqL5klY7CcwgkEjEetYkk03kfC4x-U9fL6Z33-un3-5kvLMEhEaGP3Ex2aaEZfL-Cg-vevuMFjKmcynk1WGwvu130m_ApqryMNSDCFy">
+</div>
+<div>
+<img class="w-full aspect-[2/3] object-cover" data-alt="Elegant man in a perfectly fitted bespoke suit walking through a historic European street with soft morning light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDIMwLrO2Fu0CFfkw7jush2Dctb8nZk02tdgXc2CzjPu_hqhijPFVi9wFhohe16o9ab8GnT-9JeQkRO1-6x6RKsvotZyKumtfmfwy5JtngWYINKcs1c3cKhDdFcBLizw_AfNCzZnw-pld6ubO_-h-aFLYQZhnpSwJpu1cPPWnXRhIiN65DaYwT0ddRQt6levij0AcAtPxOOoIhBNKbrUobTcoJ8c4BbxWRfJPrGI40XZoFYiharcMkrpQjSlxW2XIlLQfWVmER8H1iP">
+</div>
+</div>
+</div>
+</section>
+<!-- High-Ticket Conversion Bento Grid -->
+<section class="py-32 px-12 bg-white">
+<div class="mb-20 text-center">
+<label class="label-md uppercase tracking-[.25em] text-secondary">Conversion Strategy</label>
+<h2 class="font-serif text-5xl mt-4">Curating the *Commitment*</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-4 grid-rows-2 gap-4 h-auto md:h-[800px]">
+<!-- Large Featured Card -->
+<div class="md:col-span-2 md:row-span-2 bg-surface-container-low p-16 flex flex-col justify-end relative overflow-hidden group">
+<img class="absolute inset-0 w-full h-full object-cover opacity-20 group-hover:scale-105 transition-transform duration-1000" data-alt="Minimalist top-down view of luxury fabric swatches in navy, charcoal, and forest green arranged on a white stone surface" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDftKL0JmLVZnqCftO0EeGdj1-Ju_mzFQRqxmSR_NdOo01DWzSTixmZ-k_eC_0z5mLZWsAPypZBjfQT_YCm_ac7hKksvWqqk0l9Nkqd08eEOs8eyB5Qw3XgEmTvFjjsViDipys-r3hyhX61JP5IxRnjLLrCpfWdnPwU_b6p7mw6hloHpPf_Lmnww2Wp7UyhztVrv6JkGDS1t-8nZFWmyBHa-BZ9pW0Retx8W4QqGTHViRMWvMr7spr1bJW8z8C4SaSMZp8BONE6iS4l">
+<div class="relative z-10">
+<h3 class="font-serif text-4xl mb-6 italic">Virtual Trunk Shows</h3>
+<p class="text-on-surface-variant max-w-sm mb-8">Bringing the global atelier experience to the high-net-worth individual via immersive digital consultations.</p>
+<button class="border-b border-primary text-xs uppercase font-bold tracking-widest pb-1">Explore Framework</button>
+</div>
+</div>
+<!-- Secondary High Card -->
+<div class="md:col-span-2 bg-black text-white p-12 flex flex-col justify-between">
+<div class="flex justify-between items-start">
+<span class="material-symbols-outlined text-4xl text-secondary">workspace_premium</span>
+<span class="text-xs uppercase tracking-widest opacity-60">Elite Access</span>
+</div>
+<div>
+<h3 class="font-serif text-3xl mb-4 italic">Tiered Membership Architectures</h3>
+<p class="text-white/60 text-sm">Automating exclusivity through private portals and priority tailoring windows for seasonal collections.</p>
+</div>
+</div>
+<!-- Small Square 1 -->
+<div class="bg-surface-container-high p-12 flex flex-col justify-center text-center">
+<h4 class="font-serif text-3xl mb-2">92%</h4>
+<p class="text-[10px] uppercase tracking-widest text-on-surface-variant">Client Retention Rate</p>
+</div>
+<!-- Small Square 2 -->
+<div class="bg-secondary p-12 flex flex-col justify-center items-center text-white text-center">
+<span class="material-symbols-outlined mb-4">stylus</span>
+<p class="text-xs uppercase tracking-widest font-bold">Personalized Digital Measurement Systems</p>
+</div>
+</div>
+</section>
+<!-- Loyal Client Retention Section -->
+<section class="py-32 bg-surface-container-lowest">
+<div class="max-w-4xl mx-auto text-center px-6">
+<h2 class="font-serif text-5xl md:text-6xl mb-12 leading-tight">Beyond the *Last* **Stitch**</h2>
+<p class="text-on-surface-variant text-xl leading-relaxed mb-16 italic">
+                    "A bespoke garment is a lifelong dialogue. Our retention strategies ensure that your brand remains the primary voice in your client's sartorial journey."
+                </p>
+</div>
+<div class="flex flex-col md:flex-row gap-0">
+<div class="flex-1 border-r border-outline-variant/20 p-20 text-center">
+<span class="material-symbols-outlined text-4xl mb-6 text-secondary">calendar_today</span>
+<h3 class="font-bold uppercase tracking-widest text-sm mb-4">Aftercare concierge</h3>
+<p class="text-sm text-on-surface-variant leading-loose">Automated maintenance reminders and valet repair services that build unbreakable loyalty.</p>
+</div>
+<div class="flex-1 border-r border-outline-variant/20 p-20 text-center">
+<span class="material-symbols-outlined text-4xl mb-6 text-secondary">history_edu</span>
+<h3 class="font-bold uppercase tracking-widest text-sm mb-4">Heritage Gifting</h3>
+<p class="text-sm text-on-surface-variant leading-loose">Curated brand tokens and limited-edition archive prints for your top-tier patrons.</p>
+</div>
+<div class="flex-1 p-20 text-center">
+<span class="material-symbols-outlined text-4xl mb-6 text-secondary">group_work</span>
+<h3 class="font-bold uppercase tracking-widest text-sm mb-4">The Atelier Circle</h3>
+<p class="text-sm text-on-surface-variant leading-loose">Private community events and early-access fabric releases for long-term clients.</p>
+</div>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="relative py-40 overflow-hidden">
+<div class="absolute inset-0 bg-primary"></div>
+<div class="relative z-10 max-w-[1920px] mx-auto px-12 flex flex-col md:flex-row justify-between items-center">
+<div class="max-w-2xl mb-12 md:mb-0">
+<h2 class="font-serif text-5xl md:text-7xl text-white mb-8 italic">Ready to redefine <br>your *Legacy*?</h2>
+<p class="text-white/60 text-lg uppercase tracking-widest">Connect with our bespoke consultants.</p>
+</div>
+<div class="flex flex-col gap-6 w-full md:w-auto">
+<button class="bg-white text-black px-16 py-6 text-sm uppercase tracking-[0.2em] font-black hover:bg-secondary hover:text-white transition-all duration-500">Initiate Inquiry</button>
+<button class="border border-white/20 text-white px-16 py-6 text-sm uppercase tracking-[0.2em] font-black hover:border-white transition-all duration-500">View Methodology</button>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full border-t border-gray-100 dark:border-gray-900 bg-white dark:bg-black">
+<div class="flex flex-col md:flex-row justify-between items-center px-12 py-16 gap-8 max-w-[1920px] mx-auto">
+<div class="text-xl font-black text-black dark:text-white">LUXORA</div>
+<div class="flex gap-8 flex-wrap justify-center">
+<a class="font-sans uppercase tracking-[0.2em] text-[10px] text-gray-400 dark:text-gray-600 hover:text-yellow-600 transition-colors duration-500" href="#">Privacy Policy</a>
+<a class="font-sans uppercase tracking-[0.2em] text-[10px] text-gray-400 dark:text-gray-600 hover:text-yellow-600 transition-colors duration-500" href="#">Terms of Service</a>
+<a class="font-sans uppercase tracking-[0.2em] text-[10px] text-gray-400 dark:text-gray-600 hover:text-yellow-600 transition-colors duration-500" href="#">Cookie Policy</a>
+<a class="font-sans uppercase tracking-[0.2em] text-[10px] text-gray-400 dark:text-gray-600 hover:text-yellow-600 transition-colors duration-500" href="#">Accessibility</a>
+</div>
+<div class="font-sans uppercase tracking-[0.2em] text-[10px] text-black dark:text-white">
+                © 2024 LUXORA HAUTE. ALL RIGHTS RESERVED.
+            </div>
+</div>
+</footer>
+</body></html>

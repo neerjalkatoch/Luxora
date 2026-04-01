@@ -1,0 +1,226 @@
+<!DOCTYPE html><html class="light" lang="en"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Designer Boutiques | LUXORA</title>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;0,900;1,400&amp;family=Manrope:wght@300;400;500;700;800&amp;display=swap" rel="stylesheet">
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "surface-container-highest": "#e2e2e2",
+              "on-tertiary": "#ffffff",
+              "tertiary": "#000000",
+              "on-error-container": "#93000a",
+              "secondary-container": "#fed488",
+              "on-tertiary-fixed-variant": "#464747",
+              "surface-container-lowest": "#ffffff",
+              "on-primary-container": "#848484",
+              "inverse-surface": "#2f3131",
+              "error-container": "#ffdad6",
+              "outline": "#7e7576",
+              "error": "#ba1a1a",
+              "surface-container-high": "#e8e8e8",
+              "surface-container": "#eeeeee",
+              "surface-dim": "#dadada",
+              "on-error": "#ffffff",
+              "on-background": "#1a1c1c",
+              "secondary-fixed-dim": "#e9c176",
+              "on-secondary": "#ffffff",
+              "secondary": "#775a19",
+              "on-tertiary-fixed": "#1b1c1c",
+              "on-secondary-container": "#785a1a",
+              "tertiary-fixed": "#e3e2e2",
+              "inverse-primary": "#c6c6c6",
+              "surface-bright": "#f9f9f9",
+              "on-primary-fixed": "#1b1b1b",
+              "primary-fixed": "#e2e2e2",
+              "tertiary-fixed-dim": "#c7c6c6",
+              "surface-container-low": "#f3f3f3",
+              "primary-container": "#1b1b1b",
+              "background": "#f9f9f9",
+              "on-surface": "#1a1c1c",
+              "on-surface-variant": "#4c4546",
+              "primary-fixed-dim": "#c6c6c6",
+              "on-tertiary-container": "#848484",
+              "secondary-fixed": "#ffdea5",
+              "primary": "#000000",
+              "on-secondary-fixed": "#261900",
+              "on-primary-fixed-variant": "#474747",
+              "inverse-on-surface": "#f1f1f1",
+              "on-primary": "#ffffff",
+              "on-secondary-fixed-variant": "#5d4201",
+              "surface-tint": "#5e5e5e",
+              "outline-variant": "#cfc4c5",
+              "surface-variant": "#e2e2e2",
+              "tertiary-container": "#1b1c1c",
+              "surface": "#f9f9f9"
+            },
+            fontFamily: {
+              "headline": ["Noto Serif"],
+              "body": ["Manrope"],
+              "label": ["Manrope"]
+            },
+            borderRadius: {"DEFAULT": "0px", "lg": "0px", "xl": "0px", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        body { font-family: 'Manrope', sans-serif; }
+        h1, h2, h3 { font-family: 'Noto Serif', serif; }
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+    </style>
+</head>
+<body class="bg-surface text-on-surface selection:bg-secondary/30 selection:text-primary">
+<!-- TopNavBar (Shared Component) -->
+
+<nav class="fixed top-0 w-full z-50 bg-white/90 dark:bg-zinc-950/90 backdrop-blur-xl border-b border-stone-200 dark:border-zinc-800 transition-all duration-300">
+  <div class="max-w-screen-2xl mx-auto h-24 px-6 md:px-12 flex justify-between items-center">
+    <!-- Logo -->
+    <a href="/" class="flex-shrink-0 flex items-center transition-transform hover:opacity-80 duration-500">
+      <img src="/logo.png" alt="Luxora Digital Marketing" class="h-16 md:h-20 w-auto object-contain py-2">
+    </a>
+
+    <!-- Desktop Navigation -->
+    <div class="hidden md:flex space-x-10 lg:space-x-14 items-center">
+      <a class="text-stone-500 dark:text-stone-400 hover:text-amber-700 dark:hover:text-amber-500 font-serif italic text-2xl tracking-tight transition-all duration-300" href="/">Home</a>
+      <a class="text-stone-500 dark:text-stone-400 hover:text-amber-700 dark:hover:text-amber-500 font-serif italic text-2xl tracking-tight transition-all duration-300" href="/about.html">About</a>
+      <a class="text-stone-500 dark:text-stone-400 hover:text-amber-700 dark:hover:text-amber-500 font-serif italic text-2xl tracking-tight transition-all duration-300" href="/services.html">Services</a>
+      <a class="text-stone-500 dark:text-stone-400 hover:text-amber-700 dark:hover:text-amber-500 font-serif italic text-2xl tracking-tight transition-all duration-300" href="/case-studies.html">Case Studies</a>
+      <a class="text-stone-500 dark:text-stone-400 hover:text-amber-700 dark:hover:text-amber-500 font-serif italic text-2xl tracking-tight transition-all duration-300" href="/blog.html">Blog</a>
+    </div>
+
+    <!-- Contact Button -->
+    <div class="hidden md:flex items-center">
+      <a href="/contact.html" class="bg-black dark:bg-white text-white dark:text-black px-8 py-3.5 text-[11px] font-sans font-bold uppercase tracking-[0.25em] hover:bg-amber-800 dark:hover:bg-amber-200 transition-colors duration-500 shadow-md">Contact Us</a>
+    </div>
+  </div>
+</nav>
+
+<main class="pt-24">
+<!-- Hero Section -->
+<section class="relative h-[870px] flex items-center px-12">
+<div class="absolute inset-0 z-0 overflow-hidden">
+<img alt="Upscale boutique entrance" class="w-full h-full object-cover grayscale contrast-110" data-alt="Modern minimalist high-end boutique storefront with clean architectural lines, warm interior lighting glowing through floor-to-ceiling glass windows at twilight." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBuVsfP6L1RupBStboI5WlXFdtI9fMw9KEE8tNjdlf3HY2Zf0tuHDJ7lIzLezX7ZdaX_XG-BpqnCJeXYC5GAMfo13qquon1QduIMXJrB7G5FLI3gSr2vMbylFIgpqjg4xuneazXXxzV88BTcAjDQvz0aTaZwU9To0Qmp9PCum4rwZBm7jHzbGH-Kmma6SO-T4fn-wN85MtvmcvEsLoa_gzMe6ArNo6VdQ6WBBUC3LhzEFWYYwimvWZY284og1mQcr7T15kpv-rfZd6e">
+<div class="absolute inset-0 bg-black/10"></div>
+</div>
+<div class="relative z-10 w-full max-w-[1920px] mx-auto">
+<div class="bg-surface-container-lowest/90 backdrop-blur-md p-16 max-w-2xl border-l-[12px] border-secondary">
+<span class="label-md uppercase tracking-[0.2em] text-secondary font-bold mb-6 block">The Curated Sector</span>
+<h1 class="text-6xl md:text-8xl leading-tight mb-8">Designer <br>*Boutiques*</h1>
+<p class="text-on-surface-variant text-xl leading-relaxed font-light mb-10 max-w-lg">
+                        Elevating niche luxury through architectural brand strategy and globally resonant storytelling. We curate the bridge between artisanal heritage and digital prestige.
+                    </p>
+<button class="bg-primary text-on-primary px-12 py-5 text-sm uppercase tracking-widest font-bold hover:bg-secondary transition-all">
+                        Request Consultation
+                    </button>
+</div>
+</div>
+</section>
+<!-- Reach & Global Impact -->
+<section class="py-48 px-12 bg-surface max-w-[1920px] mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-24 items-end">
+<div class="md:col-span-5 space-y-12">
+<h2 class="text-5xl leading-tight">Bridging <span class="italic">Local Authenticity</span> with Global Presence</h2>
+<p class="text-on-surface-variant leading-relaxed text-lg">
+                        Our approach respects the hyper-local roots of a designer boutique while scaling its influence to international markets. We don't just expand; we translate soul for a global audience.
+                    </p>
+<div class="pt-8 border-t border-outline-variant/30 grid grid-cols-2 gap-8">
+<div>
+<span class="block text-4xl font-headline italic mb-2">12+</span>
+<span class="label-sm uppercase tracking-widest text-on-surface-variant">Markets Scaled</span>
+</div>
+<div>
+<span class="block text-4xl font-headline italic mb-2">24k</span>
+<span class="label-sm uppercase tracking-widest text-on-surface-variant">Client Impressions</span>
+</div>
+</div>
+</div>
+<div class="md:col-span-7">
+<div class="relative group overflow-hidden">
+<img alt="Interior of a luxury boutique" class="w-full aspect-[16/9] object-cover" data-alt="Vast minimalist luxury retail interior with high ceilings, sculptural clothing racks, polished concrete floors, and soft atmospheric spotlighting on silk garments." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBJKRBw2hVc5vNXrsrIB2f75J-NZCCt3JIUVTHCG4iz7DNzNnBRdKBOkMuk6FYo1FumBDEvMC-Kax9-WT90Ql_zTwzH6ZnW942LiVpLiniqDHsynRdXkIQ4L5iSSmQfZAIkXGWnZAuy2u50j0aG_Czogj8xVWCXqRlSXuxGPUhz5jYykiS-ow6gxIvyXe5DJdCQZsDFlRrxDTb7mmUkS4-mxgfDjbtpIMXjQoQafU_Ldh9STvNf1DYGoX0m-o2YB-TartpT610Tp-3k">
+<div class="absolute bottom-0 right-0 bg-surface p-8 max-w-sm">
+<h3 class="text-2xl mb-4 italic">Global Reach</h3>
+<p class="text-sm text-on-surface-variant font-light">
+                                Strategic placement in world capitals ensuring that boutique exclusivity is maintained while reach is maximized.
+                            </p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Bento Grid: The Experience -->
+<section class="py-24 px-12 bg-surface-container-low">
+<div class="max-w-[1920px] mx-auto">
+<div class="mb-24 text-center max-w-3xl mx-auto">
+<span class="label-md uppercase tracking-[0.2em] text-secondary mb-4 block">The Methodology</span>
+<h2 class="text-6xl italic mb-6 text-primary">The Curated Client Experience</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-4 md:grid-rows-2 gap-6 h-auto md:h-[1000px]">
+<!-- Niche Exclusivity -->
+<div class="md:col-span-2 md:row-span-2 bg-surface-container-lowest p-12 flex flex-col justify-between">
+<div>
+<h3 class="text-4xl mb-6 italic font-headline">Scaling <br>Niche Exclusivity</h3>
+<p class="text-on-surface-variant text-lg leading-relaxed font-light">
+                                Growth should never dilute the brand. We implement "Controlled Scarcity" models that drive demand through high-value associations rather than mass-market volume.
+                            </p>
+</div>
+<img class="mt-12 w-full h-80 object-cover grayscale" data-alt="Exquisite detail of a luxury handbag stitching with focused soft lighting emphasizing premium leather texture and craftsmanship." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD4h5esM2fpMc0q3Ary0u0D7SEXweCedapUpRWp7kUwCp1jFMiM1odwfaHR6rFixYX6Tb2vpJgBlA7IzQjqiTYp6kgI-ejEOOlYDXIIaUt5B3e36ZuIJFZEfTfMwN7vXywowbu88iA4IEZ5WplKdzEbY0DQkFVyGlEVcbytS3QFQ4ep53_T8GmfJAqcb-2C18zDQBAxA_nl_uhLgBzVTHN5OxMnWc-valUkRIATHIvdZG3NecF4zhhut8MuefLb65WYs8xbbQAhmPx0">
+</div>
+<!-- Digital Tailoring -->
+<div class="md:col-span-2 bg-primary p-12 flex flex-col justify-center text-on-primary">
+<span class="material-symbols-outlined text-secondary text-5xl mb-8">stylus</span>
+<h3 class="text-3xl mb-4">Digital Tailoring</h3>
+<p class="font-light opacity-80">Custom-coded e-commerce experiences that mirror the white-glove service of an in-person boutique appointment.</p>
+</div>
+<!-- Visual Identity -->
+<div class="bg-surface-container-high p-12 flex flex-col justify-end">
+<h3 class="text-2xl italic mb-4">Visual Identity</h3>
+<p class="text-sm font-light uppercase tracking-tighter opacity-60">Architectural Precision</p>
+</div>
+<!-- Market Intel -->
+<div class="bg-white p-12 flex flex-col justify-end border-l border-surface-container">
+<h3 class="text-2xl italic mb-4">Market Intel</h3>
+<p class="text-sm font-light uppercase tracking-tighter opacity-60">Consumer Psychology</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Final Call to Action -->
+<section class="py-48 px-12 bg-white">
+<div class="max-w-[1920px] mx-auto text-center border-y border-outline-variant/20 py-32">
+<h2 class="text-5xl md:text-7xl font-headline mb-12">Redefine Your Boutique's <span class="italic text-secondary">Legacy</span>.</h2>
+<div class="flex flex-col md:flex-row justify-center gap-8 items-center">
+<a class="bg-primary text-on-primary px-16 py-6 text-xs uppercase tracking-[0.3em] font-bold hover:bg-secondary transition-all" href="#">Start Engagement</a>
+<a class="text-primary border-b border-primary pb-2 text-xs uppercase tracking-[0.3em] font-bold hover:text-secondary hover:border-secondary transition-all" href="#">Download Sector Whitepaper</a>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer (Shared Component) -->
+<footer class="w-full border-t border-gray-100 dark:border-gray-900 bg-white dark:bg-black">
+<div class="flex flex-col md:flex-row justify-between items-center px-12 py-16 gap-8 max-w-[1920px] mx-auto">
+<div class="text-xl font-black text-black dark:text-white tracking-tighter">LUXORA</div>
+<div class="flex flex-wrap justify-center gap-10">
+<a class="font-sans uppercase tracking-[0.2em] text-[10px] text-gray-400 dark:text-gray-600 hover:text-yellow-600 transition-colors duration-500" href="#">Privacy Policy</a>
+<a class="font-sans uppercase tracking-[0.2em] text-[10px] text-gray-400 dark:text-gray-600 hover:text-yellow-600 transition-colors duration-500" href="#">Terms of Service</a>
+<a class="font-sans uppercase tracking-[0.2em] text-[10px] text-gray-400 dark:text-gray-600 hover:text-yellow-600 transition-colors duration-500" href="#">Cookie Policy</a>
+<a class="font-sans uppercase tracking-[0.2em] text-[10px] text-gray-400 dark:text-gray-600 hover:text-yellow-600 transition-colors duration-500" href="#">Accessibility</a>
+</div>
+<div class="font-sans uppercase tracking-[0.2em] text-[10px] text-gray-400">
+                © 2024 LUXORA HAUTE. ALL RIGHTS RESERVED.
+            </div>
+</div>
+</footer>
+</body></html>
