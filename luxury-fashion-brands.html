@@ -1,245 +1,687 @@
 <!DOCTYPE html><html class="light" lang="en"><head>
 <meta charset="utf-8">
 <meta content="width=device-width, initial-scale=1.0" name="viewport">
-<title>LUXORA | Luxury Fashion Strategy</title>
+<title>Luxury Fashion Brand Marketing Agency | LUXORA — Digital Marketing for High-End Fashion</title>
+<meta name="description" content="LUXORA specializes in luxury digital marketing services for fashion brands. SEO, social media, paid media, content creation & website optimization for high-end fashion brands.">
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;0,900;1,400&family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+<!-- Tailwind CSS -->
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400&amp;family=Manrope:wght@300;400;600;800&amp;display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
 <script id="tailwind-config">
-        tailwind.config = {
-            darkMode: "class",
-            theme: {
-                extend: {
-                    colors: {
-                        "surface-container-highest": "#e2e2e2",
-                        "on-tertiary": "#ffffff",
-                        "tertiary": "#000000",
-                        "on-error-container": "#93000a",
-                        "secondary-container": "#fed488",
-                        "on-tertiary-fixed-variant": "#464747",
-                        "surface-container-lowest": "#ffffff",
-                        "on-primary-container": "#848484",
-                        "inverse-surface": "#2f3131",
-                        "error-container": "#ffdad6",
-                        "outline": "#7e7576",
-                        "error": "#ba1a1a",
-                        "surface-container-high": "#e8e8e8",
-                        "surface-container": "#eeeeee",
-                        "surface-dim": "#dadada",
-                        "on-error": "#ffffff",
-                        "on-background": "#1a1c1c",
-                        "secondary-fixed-dim": "#e9c176",
-                        "on-secondary": "#ffffff",
-                        "secondary": "#775a19",
-                        "on-tertiary-fixed": "#1b1c1c",
-                        "on-secondary-container": "#785a1a",
-                        "tertiary-fixed": "#e3e2e2",
-                        "inverse-primary": "#c6c6c6",
-                        "surface-bright": "#f9f9f9",
-                        "on-primary-fixed": "#1b1b1b",
-                        "primary-fixed": "#e2e2e2",
-                        "tertiary-fixed-dim": "#c7c6c6",
-                        "surface-container-low": "#f3f3f3",
-                        "primary-container": "#1b1b1b",
-                        "background": "#f9f9f9",
-                        "on-surface": "#1a1c1c",
-                        "on-surface-variant": "#4c4546",
-                        "primary-fixed-dim": "#c6c6c6",
-                        "on-tertiary-container": "#848484",
-                        "secondary-fixed": "#ffdea5",
-                        "primary": "#000000",
-                        "on-secondary-fixed": "#261900",
-                        "on-primary-fixed-variant": "#474747",
-                        "inverse-on-surface": "#f1f1f1",
-                        "on-primary": "#ffffff",
-                        "on-secondary-fixed-variant": "#5d4201",
-                        "surface-tint": "#5e5e5e",
-                        "outline-variant": "#cfc4c5",
-                        "surface-variant": "#e2e2e2",
-                        "tertiary-container": "#1b1c1c",
-                        "surface": "#f9f9f9"
-                    },
-                    fontFamily: {
-                        "headline": ["Noto Serif"],
-                        "body": ["Manrope"],
-                        "label": ["Manrope"]
-                    },
-                    borderRadius: { "DEFAULT": "0px", "lg": "0px", "xl": "0px", "full": "9999px" },
-                },
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "surface-container-highest": "#e2e2e2",
+              "on-tertiary": "#ffffff",
+              "tertiary": "#000000",
+              "on-error-container": "#93000a",
+              "secondary-container": "#fed488",
+              "on-tertiary-fixed-variant": "#464747",
+              "surface-container-lowest": "#ffffff",
+              "on-primary-container": "#848484",
+              "inverse-surface": "#2f3131",
+              "error-container": "#ffdad6",
+              "outline": "#7e7576",
+              "error": "#ba1a1a",
+              "surface-container-high": "#e8e8e8",
+              "surface-container": "#eeeeee",
+              "surface-dim": "#dadada",
+              "on-error": "#ffffff",
+              "on-background": "#1a1c1c",
+              "secondary-fixed-dim": "#e9c176",
+              "on-secondary": "#ffffff",
+              "secondary": "#775a19",
+              "on-tertiary-fixed": "#1b1c1c",
+              "on-secondary-container": "#785a1a",
+              "tertiary-fixed": "#e3e2e2",
+              "inverse-primary": "#c6c6c6",
+              "surface-bright": "#f9f9f9",
+              "on-primary-fixed": "#1b1b1b",
+              "primary-fixed": "#e2e2e2",
+              "tertiary-fixed-dim": "#c7c6c6",
+              "surface-container-low": "#f3f3f3",
+              "primary-container": "#1b1b1b",
+              "background": "#f9f9f9",
+              "on-surface": "#1a1c1c",
+              "on-surface-variant": "#4c4546",
+              "primary-fixed-dim": "#c6c6c6",
+              "on-tertiary-container": "#848484",
+              "secondary-fixed": "#ffdea5",
+              "primary": "#000000",
+              "on-secondary-fixed": "#261900",
+              "on-primary-fixed-variant": "#474747",
+              "inverse-on-surface": "#f1f1f1",
+              "on-primary": "#ffffff",
+              "on-secondary-fixed-variant": "#5d4201",
+              "surface-tint": "#5e5e5e",
+              "outline-variant": "#cfc4c5",
+              "surface-variant": "#e2e2e2",
+              "tertiary-container": "#1b1c1c",
+              "surface": "#f9f9f9"
             },
-        }
+            fontFamily: {
+              "headline": ["Noto Serif"],
+              "body": ["Manrope"],
+              "label": ["Manrope"]
+            },
+            borderRadius: {"DEFAULT": "0px", "lg": "0px", "xl": "0px", "full": "9999px"},
+          },
+        },
+      }
     </script>
 <style>
-        .material-symbols-outlined {
-            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
-        }
-        body {
-            font-family: 'Manrope', sans-serif;
-            background-color: #f9f9f9;
-        }
-        h1, h2, h3 {
-            font-family: 'Noto Serif', serif;
-        }
-        .editorial-spacing {
-            padding-top: 8.5rem;
-            padding-bottom: 8.5rem;
-        }
-    </style>
+    .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+    }
+    body { font-family: 'Manrope', sans-serif; }
+    h1, h2, h3, h4 { font-family: 'Noto Serif', serif; }
+    .no-scrollbar::-webkit-scrollbar { display: none; }
+
+    /* Marquee animation for specialisms */
+    @keyframes marquee {
+        0% { transform: translateX(0); }
+        100% { transform: translateX(-50%); }
+    }
+    .animate-marquee {
+        animation: marquee 30s linear infinite;
+    }
+    .animate-marquee:hover {
+        animation-play-state: paused;
+    }
+
+    /* Subtle fade-in on scroll */
+    .fade-in-section {
+        opacity: 0;
+        transform: translateY(40px);
+        transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+    }
+    .fade-in-section.is-visible {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    /* Service card hover lift */
+    .service-card {
+        transition: transform 0.4s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.4s ease;
+    }
+    .service-card:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 20px 60px rgba(0,0,0,0.08);
+    }
+
+    /* FAQ accordion */
+    .faq-answer {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.4s ease, padding 0.4s ease;
+    }
+    .faq-item.active .faq-answer {
+        max-height: 300px;
+    }
+    .faq-item.active .faq-icon {
+        transform: rotate(45deg);
+    }
+    .faq-icon {
+        transition: transform 0.3s ease;
+    }
+</style>
 </head>
-<body class="bg-background text-on-surface">
-<!-- TopNavBar -->
+<body class="bg-surface text-on-surface selection:bg-secondary/30 selection:text-primary">
+<!-- TopNavBar (Shared Component) -->
 
 <nav class="fixed top-0 w-full z-50 bg-white/90 dark:bg-zinc-950/90 backdrop-blur-xl border-b border-stone-200 dark:border-zinc-800 transition-all duration-300">
   <div class="max-w-screen-2xl mx-auto h-24 px-6 md:px-12 flex justify-between items-center">
     <!-- Logo -->
     <a href="/" class="flex-shrink-0 flex items-center transition-transform hover:opacity-80 duration-500">
-      <img src="/logo.png" alt="Luxora" class="h-24 md:h-28 w-auto object-contain scale-[2] md:scale-[2.5] origin-left dark:invert">
+      <img src="/logo.png" alt="Luxora" class="w-40 md:w-48 lg:w-56 h-auto object-contain transition-transform duration-500 hover:scale-105 dark:invert dark:hue-rotate-180">
     </a>
 
     <!-- Desktop Navigation -->
     <div class="hidden md:flex space-x-10 lg:space-x-14 items-center">
-      <a class="text-stone-500 dark:text-stone-400 hover:text-amber-700 dark:hover:text-amber-500 font-serif italic text-2xl tracking-tight transition-all duration-300" href="/">Home</a>
-      <a class="text-stone-500 dark:text-stone-400 hover:text-amber-700 dark:hover:text-amber-500 font-serif italic text-2xl tracking-tight transition-all duration-300" href="/about.html">About</a>
-      <a class="text-stone-500 dark:text-stone-400 hover:text-amber-700 dark:hover:text-amber-500 font-serif italic text-2xl tracking-tight transition-all duration-300" href="/services.html">Services</a>
-      <a class="text-stone-500 dark:text-stone-400 hover:text-amber-700 dark:hover:text-amber-500 font-serif italic text-2xl tracking-tight transition-all duration-300" href="/case-studies.html">Case Studies</a>
-      <a class="text-stone-500 dark:text-stone-400 hover:text-amber-700 dark:hover:text-amber-500 font-serif italic text-2xl tracking-tight transition-all duration-300" href="/blog.html">Blog</a>
+      <a class="hover: dark:hover: font-serif italic text-2xl tracking-tight transition-all duration-300 text-[#D4AF37] hover:opacity-80" href="/">Home</a>
+      <a class="hover: dark:hover: font-serif italic text-2xl tracking-tight transition-all duration-300 text-[#D4AF37] hover:opacity-80" href="/about.html">About</a>
+      
+<div class="relative group">
+  <button class="text-[#D4AF37] hover:opacity-80 font-serif italic text-2xl tracking-tight transition-all duration-300 flex items-center gap-1 focus:outline-none">
+    Services
+    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+    </svg>
+  </button>
+  <div class="absolute left-0 mt-8 w-72 bg-white/95 dark:bg-zinc-950/95 backdrop-blur-xl border border-stone-200 dark:border-zinc-800 shadow-2xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 flex flex-col py-4 z-50 rounded-sm">
+    <a href="/luxury-fashion-brands.html" class="px-6 py-3 font-sans text-xs uppercase tracking-widest text-[#D4AF37] hover:bg-stone-100 dark:hover:bg-zinc-900 transition-colors">Luxury Fashion</a>
+    <a href="/designer-boutiques.html" class="px-6 py-3 font-sans text-xs uppercase tracking-widest text-[#D4AF37] hover:bg-stone-100 dark:hover:bg-zinc-900 transition-colors">Designer Boutiques</a>
+    <a href="/bespoke-tailoring.html" class="px-6 py-3 font-sans text-xs uppercase tracking-widest text-[#D4AF37] hover:bg-stone-100 dark:hover:bg-zinc-900 transition-colors">Bespoke Tailoring</a>
+    <a href="/couture-wedding-wear.html" class="px-6 py-3 font-sans text-xs uppercase tracking-widest text-[#D4AF37] hover:bg-stone-100 dark:hover:bg-zinc-900 transition-colors">Couture &amp; Wedding Wear</a>
+    <a href="/premium-ethnic-wear.html" class="px-6 py-3 font-sans text-xs uppercase tracking-widest text-[#D4AF37] hover:bg-stone-100 dark:hover:bg-zinc-900 transition-colors">Premium Ethnic Wear</a>
+  </div>
+</div>
+
+      
+      
     </div>
 
     <!-- Contact Button -->
     <div class="hidden md:flex items-center">
-      <a href="/contact.html" class="bg-black dark:bg-white text-white dark:text-black px-8 py-3.5 text-[11px] font-sans font-bold uppercase tracking-[0.25em] hover:bg-amber-800 dark:hover:bg-amber-200 transition-colors duration-500 shadow-md">Contact Us</a>
+      <a href="/contact.html" class="px-8 py-3.5 text-[11px] font-sans font-bold uppercase tracking-[0.25em] transition-colors duration-500 shadow-md bg-black dark:bg-white text-white dark:text-black hover:opacity-80">Contact Us</a>
     </div>
   </div>
 </nav>
 
-<main>
-<!-- Hero Section: Cinematic Luxury -->
-<section class="relative h-screen flex items-center justify-center overflow-hidden">
-<div class="absolute inset-0 w-full h-full">
-<img class="w-full h-full object-cover grayscale brightness-75" data-alt="Cinematic high-fashion editorial photo of a man and woman in monochromatic black attire standing in a minimalist concrete gallery with harsh dramatic shadows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCHJ6pbhHbF1QY32mvSE7_4MXo31uTkggJWehEGqJmmbbc--z8aSwhh2XEvEZYM5u-8u2-Wnl2X612Wd3RAtQOsgpttAsS3dt4gKPUP2yHH41TqjzrRoLZaSz9nyhNg-Sq1-LAPOSm1887WgFQIyK-kRzqmNOvdZN7DHheVbwetPBQ6T6vvVGURqOLhsemMRuwxRAf9c3fTb_hal6QcBxtEcEnWgPLCKs7TXMuOIo-gGr1Z7UpjqTi_TdBGThaBmibLoCv1nqYYNhe9">
-</div>
-<div class="relative z-10 text-center px-6">
-<p class="font-label uppercase tracking-[0.4em] text-white text-xs mb-6">Sector Specialization</p>
-<h1 class="text-5xl md:text-8xl text-white font-headline leading-tight max-w-5xl mx-auto">
-                    Luxury Fashion <br>
-<span class="italic font-normal">for</span> **Men** &amp; **Women**
-                </h1>
-</div>
-<div class="absolute bottom-12 left-12">
-<div class="w-16 h-[1px] bg-white opacity-40"></div>
-</div>
+<main class="pt-24">
+
+<!-- ══════════════════════════════════════════════════════════════════════
+     SECTION 1 — HERO
+     ══════════════════════════════════════════════════════════════════════ -->
+<section id="hero" class="relative min-h-[90vh] flex items-center px-6 md:px-12 overflow-hidden">
+  <!-- Background Image -->
+  <div class="absolute inset-0 z-0 overflow-hidden">
+    <img alt="Cinematic high-fashion editorial" class="w-full h-full object-cover scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCHJ6pbhHbF1QY32mvSE7_4MXo31uTkggJWehEGqJmmbbc--z8aSwhh2XEvEZYM5u-8u2-Wnl2X612Wd3RAtQOsgpttAsS3dt4gKPUP2yHH41TqjzrRoLZaSz9nyhNg-Sq1-LAPOSm1887WgFQIyK-kRzqmNOvdZN7DHheVbwetPBQ6T6vvVGURqOLhsemMRuwxRAf9c3fTb_hal6QcBxtEcEnWgPLCKs7TXMuOIo-gGr1Z7UpjqTi_TdBGThaBmibLoCv1nqYYNhe9">
+    <div class="absolute inset-0 bg-gradient-to-r from-black/70 via-black/40 to-transparent"></div>
+  </div>
+
+  <div class="relative z-10 w-full max-w-[1920px] mx-auto py-24">
+    <div class="max-w-3xl">
+      <span class="inline-block font-label uppercase tracking-[0.3em] text-xs text-[#D4AF37] font-bold mb-6">Luxury Fashion Brand Marketing</span>
+      <h1 class="text-4xl sm:text-5xl md:text-7xl lg:text-8xl leading-[1.05] mb-8 text-white font-bold">
+        Digital Marketing for <span class="italic font-normal text-[#D4AF37]">Luxury Fashion</span> Brands
+      </h1>
+      <p class="text-white/80 text-lg md:text-xl leading-relaxed font-light mb-10 max-w-2xl">
+        In the world of luxury fashion brands, image is everything. At LUXORA, we specialize in luxury digital marketing services designed exclusively for fashion brands that want to stand out, inspire, and dominate the premium market. We don't just market fashion — we elevate it.
+      </p>
+
+      <!-- CTA Buttons -->
+      <div class="flex flex-col sm:flex-row gap-5 mb-20">
+        <a href="/contact.html" id="hero-cta-strategy" class="bg-[#D4AF37] text-black px-10 py-5 text-xs uppercase tracking-[0.25em] font-bold hover:bg-[#c9a431] transition-all duration-300 text-center">
+          Work With LUXORA
+        </a>
+        <a href="#services" id="hero-cta-work" class="border border-white/40 text-white px-10 py-5 text-xs uppercase tracking-[0.25em] font-bold hover:border-white hover:bg-white/10 transition-all duration-300 text-center">
+          View Our Services
+        </a>
+      </div>
+
+      <!-- Stats Bar -->
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-10 border-t border-white/20 pt-10">
+        <div>
+          <span class="block text-4xl md:text-5xl font-headline italic text-white mb-1">Top 1%</span>
+          <span class="text-[10px] uppercase tracking-[0.2em] text-white/60 font-label">Luxury Fashion Specialists</span>
+        </div>
+        <div>
+          <span class="block text-4xl md:text-5xl font-headline italic text-white mb-1">98%</span>
+          <span class="text-[10px] uppercase tracking-[0.2em] text-white/60 font-label">Client Retention Rate</span>
+        </div>
+        <div>
+          <span class="block text-4xl md:text-5xl font-headline italic text-white mb-1">12+</span>
+          <span class="text-[10px] uppercase tracking-[0.2em] text-white/60 font-label">International Markets</span>
+        </div>
+        <div>
+          <span class="block text-4xl md:text-5xl font-headline italic text-white mb-1">4.2×</span>
+          <span class="text-[10px] uppercase tracking-[0.2em] text-white/60 font-label">Average ROAS Delivered</span>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
-<!-- Section: Strategic Positioning -->
-<section class="editorial-spacing px-12 max-w-[1920px] mx-auto bg-surface">
-<div class="grid grid-cols-1 md:grid-cols-12 gap-12 items-center">
-<div class="md:col-span-5 space-y-12">
-<span class="font-label uppercase tracking-[0.2em] text-secondary text-sm">01 — Core Pillar</span>
-<h2 class="text-4xl md:text-6xl font-headline leading-none">Strategic <span class="italic">Positioning</span></h2>
-<p class="text-on-surface-variant font-body text-lg leading-relaxed max-w-md">
-                        In the realm of high-end fashion, positioning is not about price—it is about the curation of desire. We sculpt the narrative landscape for global labels, ensuring their heritage is preserved while their future is pioneered.
-                    </p>
-<div class="pt-6">
-<button class="border-b border-primary pb-1 font-label uppercase tracking-widest text-xs">Explore Methodology</button>
-</div>
-</div>
-<div class="md:col-span-7 relative">
-<div class="bg-surface-container-high w-full aspect-[4/5] relative">
-<img class="w-full h-full object-cover grayscale mix-blend-multiply opacity-90" data-alt="Minimalist top-down shot of luxury designer accessories, leather goods, and high-end textiles arranged in a clean editorial layout on white surface" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDI0H8hV-CO-LLUVhm8_fzDp2hPFaI_bgKoAV4Hdc3_gl24L_VTauBFMhLm3mXLPsRquViEy2DYGnPbh0KSmDoGdW2A6LFbcsEF5UFg2TeOw90CWosSKIMOyFfu5mQD3gRR5tRmc9hNNiG_SN6Mt3LEgwhxsseGmW0e-Kl2oPn4W2D-xl9foQR7SayJpgpTAtHm6jmmkxc1RV6VHNTJkl9hSYzI9UfWzPBEdLuqVsqbUt1SJuFMW97lDOy0l36t7wRyeae00wFqphJ2">
-<!-- Floating Tonal Layer -->
-<div class="absolute -bottom-10 -left-10 p-12 bg-surface-container-lowest shadow-sm hidden md:block max-w-xs">
-<p class="font-body text-sm italic">"Luxury is the ease of a t-shirt in a very expensive dress." — Karl Lagerfeld</p>
-</div>
-</div>
-</div>
-</div>
+
+<!-- ══════════════════════════════════════════════════════════════════════
+     SECTION 2 — ELEVATING LUXURY FASHION BRANDS
+     ══════════════════════════════════════════════════════════════════════ -->
+<section id="philosophy" class="py-28 md:py-40 px-6 md:px-12 bg-surface fade-in-section">
+  <div class="max-w-[1920px] mx-auto">
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-16 lg:gap-24 items-center">
+      <!-- Text Column -->
+      <div class="lg:col-span-6 xl:col-span-5">
+        <span class="inline-block font-label uppercase tracking-[0.3em] text-xs text-secondary font-bold mb-6">Our Expertise</span>
+        <h2 class="text-4xl md:text-6xl leading-tight mb-8">Elevating Luxury Fashion Brands in the <span class="italic">Digital Era</span></h2>
+        <div class="space-y-6 text-on-surface-variant text-lg leading-relaxed font-light">
+          <p>
+            Luxury fashion is built on storytelling, exclusivity, and identity. Your digital presence should reflect the same.
+          </p>
+          <p>
+            Our expertise in working with high-end fashion brands allows us to create strategies that maintain brand prestige while driving measurable growth.
+          </p>
+          <p>
+            Whether you're an established label or a rising name among top luxury fashion brands, we position you to attract the right audience — those who value style, status, and sophistication.
+          </p>
+        </div>
+        <a href="/contact.html" class="inline-flex items-center gap-3 mt-10 text-primary text-xs uppercase tracking-[0.25em] font-bold border-b-2 border-primary pb-2 hover:text-secondary hover:border-secondary transition-all duration-300 group">
+          Start Your Journey
+          <span class="inline-block transition-transform group-hover:translate-x-2">→</span>
+        </a>
+      </div>
+
+      <!-- Image Column -->
+      <div class="lg:col-span-6 xl:col-span-7 relative">
+        <div class="relative group overflow-hidden">
+          <img alt="Luxury designer accessories editorial layout" class="w-full aspect-[4/5] md:aspect-[16/12] object-cover grayscale hover:grayscale-0 transition-all duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDI0H8hV-CO-LLUVhm8_fzDp2hPFaI_bgKoAV4Hdc3_gl24L_VTauBFMhLm3mXLPsRquViEy2DYGnPbh0KSmDoGdW2A6LFbcsEF5UFg2TeOw90CWosSKIMOyFfu5mQD3gRR5tRmc9hNNiG_SN6Mt3LEgwhxsseGmW0e-Kl2oPn4W2D-xl9foQR7SayJpgpTAtHm6jmmkxc1RV6VHNTJkl9hSYzI9UfWzPBEdLuqVsqbUt1SJuFMW97lDOy0l36t7wRyeae00wFqphJ2">
+        </div>
+        <!-- Floating accent box -->
+        <div class="absolute -bottom-8 -left-4 md:-left-8 bg-primary text-on-primary p-8 md:p-10 max-w-xs shadow-2xl hidden lg:block">
+          <p class="font-headline italic text-2xl text-[#D4AF37] leading-snug">"Image is everything. We make it unforgettable."</p>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
-<!-- Section: Audience Acquisition (Bento Layout) -->
-<section class="editorial-spacing px-12 bg-surface-container-low">
-<div class="max-w-[1920px] mx-auto">
-<div class="mb-24 text-center">
-<span class="font-label uppercase tracking-[0.2em] text-secondary text-sm block mb-4">02 — Global Reach</span>
-<h2 class="text-4xl md:text-7xl font-headline italic">Audience <span class="not-italic font-bold">Acquisition</span></h2>
-</div>
-<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-<!-- Card 1 -->
-<div class="bg-surface-container-lowest p-12 flex flex-col justify-between h-[500px]">
-<div>
-<span class="material-symbols-outlined text-4xl mb-8">public</span>
-<h3 class="text-2xl font-headline mb-6">Global Market Penetration</h3>
-<p class="font-body text-on-surface-variant leading-relaxed">Connecting heritage labels with burgeoning luxury markets across EMEA and Asia-Pacific through localized storytelling.</p>
-</div>
-<p class="font-label text-[10px] tracking-widest text-secondary">01 / ANALYTICS</p>
-</div>
-<!-- Card 2: Visual Dominant -->
-<div class="bg-primary overflow-hidden h-[500px] relative group">
-<img class="w-full h-full object-cover opacity-60 transition-transform duration-700 group-hover:scale-105" data-alt="Model in high-fashion avant-garde clothing walking through a grand historical European architectural hallway with soft golden light filtering through windows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA485x-BGqXUeUakywHGy0fmCbxCVZ0MXXxU1J8ck-mV5RAWMfrR8fCdinqdvY-SAw4Jh1E4poesi_4aban8NWuDFv9tN5a4Phkl45UioKRIgzk5VEeewmzmJfOuPH9zOhRocy-x2XtX_hUcVs8oAYGGokbDXa5RIk2gBdsUbpB2tmr5pqVzawZ7_iXJPpwZRUVrzh4qh2x2NkFGKTcUCqU3y6pN27x6Rb3zeBtgj9ZSLW2u_JbnMbAQgIH_97xmphA85kT9cPhOAEr">
-<div class="absolute inset-0 p-12 flex flex-col justify-end">
-<h3 class="text-white text-3xl font-headline leading-tight">High-Value <br>Retention</h3>
-</div>
-</div>
-<!-- Card 3 -->
-<div class="bg-surface-container-lowest p-12 flex flex-col justify-between h-[500px]">
-<div>
-<span class="material-symbols-outlined text-4xl mb-8">auto_graph</span>
-<h3 class="text-2xl font-headline mb-6">Psychographic Targeting</h3>
-<p class="font-body text-on-surface-variant leading-relaxed">Moving beyond demographics to target the lifestyle, values, and aesthetic preferences of the ultra-high-net-worth individual.</p>
-</div>
-<p class="font-label text-[10px] tracking-widest text-secondary">03 / PRECISION</p>
-</div>
-</div>
-</div>
+
+<!-- ══════════════════════════════════════════════════════════════════════
+     SECTION 3 — SPECIALIZED SERVICES (5 Cards)
+     ══════════════════════════════════════════════════════════════════════ -->
+<section id="services" class="py-28 md:py-40 px-6 md:px-12 bg-surface-container-low fade-in-section">
+  <div class="max-w-[1440px] mx-auto">
+    <!-- Section Header -->
+    <div class="text-center max-w-3xl mx-auto mb-20">
+      <span class="inline-block font-label uppercase tracking-[0.3em] text-xs text-secondary font-bold mb-4">Our Services</span>
+      <h2 class="text-4xl md:text-6xl italic mb-6 text-primary">Specialized Services for Luxury Fashion Brands</h2>
+      <p class="text-on-surface-variant text-lg font-light leading-relaxed">
+        From luxury social media marketing to premium advertising, every solution is designed to elevate your brand and attract high-value audiences.
+      </p>
+    </div>
+
+    <!-- Service Cards Grid -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+      <!-- Service 01: Luxury Fashion Social Media Marketing -->
+      <div id="service-social" class="service-card bg-surface-container-lowest p-10 md:p-12 flex flex-col border-t-4 border-transparent hover:border-secondary">
+        <span class="text-secondary font-headline italic text-3xl mb-6">01</span>
+        <h3 class="text-2xl mb-4 leading-snug">Luxury Fashion Social Media Marketing</h3>
+        <p class="text-on-surface-variant text-sm leading-relaxed font-light flex-grow mb-8">
+          Fashion lives on visual platforms. Our luxury social media marketing transforms your Instagram, Pinterest, and TikTok into curated digital runways. We create visually stunning content that reflects the essence of designer fashion brands.
+        </p>
+        <div class="flex flex-wrap gap-2">
+          <span class="text-[9px] uppercase tracking-[0.15em] font-bold bg-surface-container-high px-3 py-1.5">Editorial-Style Posts</span>
+          <span class="text-[9px] uppercase tracking-[0.15em] font-bold bg-surface-container-high px-3 py-1.5">Campaign Storytelling</span>
+          <span class="text-[9px] uppercase tracking-[0.15em] font-bold bg-surface-container-high px-3 py-1.5">Influencer Collaborations</span>
+          <span class="text-[9px] uppercase tracking-[0.15em] font-bold bg-surface-container-high px-3 py-1.5">Luxury Aesthetic</span>
+        </div>
+      </div>
+
+      <!-- Service 02: SEO for Luxury Fashion Brands -->
+      <div id="service-seo" class="service-card bg-surface-container-lowest p-10 md:p-12 flex flex-col border-t-4 border-transparent hover:border-secondary">
+        <span class="text-secondary font-headline italic text-3xl mb-6">02</span>
+        <h3 class="text-2xl mb-4 leading-snug">SEO for Luxury Fashion Brands</h3>
+        <p class="text-on-surface-variant text-sm leading-relaxed font-light flex-grow mb-8">
+          When people search for luxury fashion brands, your brand should be among the top results. Our SEO for luxury brands focuses on ranking for high-value keywords such as "luxury clothing brands," "top designer brands," and "premium fashion labels." We build authority-driven content that attracts high-intent users ready to engage or purchase.
+        </p>
+        <div class="flex flex-wrap gap-2">
+          <span class="text-[9px] uppercase tracking-[0.15em] font-bold bg-surface-container-high px-3 py-1.5">High-Value Keywords</span>
+          <span class="text-[9px] uppercase tracking-[0.15em] font-bold bg-surface-container-high px-3 py-1.5">Authority Content</span>
+          <span class="text-[9px] uppercase tracking-[0.15em] font-bold bg-surface-container-high px-3 py-1.5">Technical SEO</span>
+        </div>
+      </div>
+
+      <!-- Service 03: Premium Advertising -->
+      <div id="service-ads" class="service-card bg-surface-container-lowest p-10 md:p-12 flex flex-col border-t-4 border-transparent hover:border-secondary">
+        <span class="text-secondary font-headline italic text-3xl mb-6">03</span>
+        <h3 class="text-2xl mb-4 leading-snug">Premium Advertising for Fashion Brands</h3>
+        <p class="text-on-surface-variant text-sm leading-relaxed font-light flex-grow mb-8">
+          Luxury requires precision — not mass exposure. With our premium digital advertising services, we target audiences who actively engage with high-end fashion brands and luxury lifestyles. Every campaign is crafted for maximum impact with controlled spend.
+        </p>
+        <div class="flex flex-wrap gap-2">
+          <span class="text-[9px] uppercase tracking-[0.15em] font-bold bg-surface-container-high px-3 py-1.5">Meta &amp; Google Ads</span>
+          <span class="text-[9px] uppercase tracking-[0.15em] font-bold bg-surface-container-high px-3 py-1.5">High-End Targeting</span>
+          <span class="text-[9px] uppercase tracking-[0.15em] font-bold bg-surface-container-high px-3 py-1.5">Creative Campaigns</span>
+          <span class="text-[9px] uppercase tracking-[0.15em] font-bold bg-surface-container-high px-3 py-1.5">Conversion Optimization</span>
+        </div>
+      </div>
+
+      <!-- Service 04: Luxury Fashion Content Creation -->
+      <div id="service-content" class="service-card bg-surface-container-lowest p-10 md:p-12 flex flex-col border-t-4 border-transparent hover:border-secondary">
+        <span class="text-secondary font-headline italic text-3xl mb-6">04</span>
+        <h3 class="text-2xl mb-4 leading-snug">Luxury Fashion Content Creation</h3>
+        <p class="text-on-surface-variant text-sm leading-relaxed font-light flex-grow mb-8">
+          Every luxury brand has a story — and we make sure it's told beautifully. Our luxury brand marketing includes content that reflects heritage and craftsmanship, exclusivity and prestige, and modern luxury trends. We create blog content, brand storytelling, and landing pages optimized for luxury fashion brands SEO.
+        </p>
+        <div class="flex flex-wrap gap-2">
+          <span class="text-[9px] uppercase tracking-[0.15em] font-bold bg-surface-container-high px-3 py-1.5">Heritage &amp; Craft</span>
+          <span class="text-[9px] uppercase tracking-[0.15em] font-bold bg-surface-container-high px-3 py-1.5">Brand Storytelling</span>
+          <span class="text-[9px] uppercase tracking-[0.15em] font-bold bg-surface-container-high px-3 py-1.5">SEO Content</span>
+        </div>
+      </div>
+
+      <!-- Service 05: Luxury Fashion Website Optimization -->
+      <div id="service-website" class="service-card bg-surface-container-lowest p-10 md:p-12 flex flex-col border-t-4 border-transparent hover:border-secondary">
+        <span class="text-secondary font-headline italic text-3xl mb-6">05</span>
+        <h3 class="text-2xl mb-4 leading-snug">Luxury Fashion Website Optimization</h3>
+        <p class="text-on-surface-variant text-sm leading-relaxed font-light flex-grow mb-8">
+          Your website should feel like stepping into a designer boutique. We design and optimize websites that align with high-end digital marketing standards — minimal, elegant, and conversion-focused. Every pixel communicates prestige.
+        </p>
+        <div class="flex flex-wrap gap-2">
+          <span class="text-[9px] uppercase tracking-[0.15em] font-bold bg-surface-container-high px-3 py-1.5">Premium UI/UX</span>
+          <span class="text-[9px] uppercase tracking-[0.15em] font-bold bg-surface-container-high px-3 py-1.5">Fast Performance</span>
+          <span class="text-[9px] uppercase tracking-[0.15em] font-bold bg-surface-container-high px-3 py-1.5">Mobile-First</span>
+          <span class="text-[9px] uppercase tracking-[0.15em] font-bold bg-surface-container-high px-3 py-1.5">High-End Layout</span>
+        </div>
+      </div>
+
+      <!-- Service 06: Placeholder for visual balance — Who We Work With -->
+      <div id="service-clients" class="service-card bg-primary text-on-primary p-10 md:p-12 flex flex-col justify-between border-t-4 border-[#D4AF37]">
+        <div>
+          <span class="material-symbols-outlined text-[#D4AF37] text-4xl mb-6">groups</span>
+          <h3 class="text-2xl mb-4 leading-snug">Who We Work With</h3>
+          <p class="text-white/70 text-sm leading-relaxed font-light mb-8">
+            We partner with brands that want to be recognized among the best — from established luxury fashion houses to emerging designer labels.
+          </p>
+        </div>
+        <ul class="space-y-3 text-white/60 text-xs uppercase tracking-[0.15em]">
+          <li class="flex items-center gap-3"><span class="w-1.5 h-1.5 bg-[#D4AF37] inline-block"></span> Established Luxury Fashion Brands</li>
+          <li class="flex items-center gap-3"><span class="w-1.5 h-1.5 bg-[#D4AF37] inline-block"></span> Emerging Designer Labels</li>
+          <li class="flex items-center gap-3"><span class="w-1.5 h-1.5 bg-[#D4AF37] inline-block"></span> Premium Clothing Startups</li>
+          <li class="flex items-center gap-3"><span class="w-1.5 h-1.5 bg-[#D4AF37] inline-block"></span> Boutique Fashion Labels</li>
+          <li class="flex items-center gap-3"><span class="w-1.5 h-1.5 bg-[#D4AF37] inline-block"></span> High-End eCommerce Stores</li>
+        </ul>
+      </div>
+    </div>
+  </div>
 </section>
-<!-- Section: Digital Storytelling (Asymmetric Layout) -->
-<section class="editorial-spacing px-12 max-w-[1920px] mx-auto bg-surface">
-<div class="flex flex-col md:flex-row gap-24 items-start">
-<div class="w-full md:w-1/2">
-<img class="w-full aspect-square object-cover grayscale shadow-2xl" data-alt="Extreme close up of luxury fabric texture and detailed stitching on a designer garment, emphasizing craft and high-quality materials" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBzJPyvktLTOMsOBRENqwn25vFoR-fNxNey11vgtGi1P49Rj998TVGprBw-cRdFXRUcjBPr8XAX5r0fh1dSoF-Xy70ZPlfHkgbctPaaFFtLXtEK69Sqkrwgj3Gj5mHhWcRXyErcL0ou7J0wCjr2_tErzC6gmvGMXEU7hWKMpOnXf_vynibE_pI37SHFTIkRA-VbWoY5WjNZfmDMeJnVXkA-Vbh6AcOr5oO61z9CF1w3Q3_gkeZfBbGmboKh8bq2xfd_Wj65oJ78Pd8C">
-</div>
-<div class="w-full md:w-1/2 md:mt-48 space-y-12">
-<span class="font-label uppercase tracking-[0.2em] text-secondary text-sm">03 — Digital Narrative</span>
-<h2 class="text-4xl md:text-6xl font-headline leading-tight">High-End <span class="italic">Digital</span> Storytelling</h2>
-<p class="text-on-surface-variant font-body text-lg leading-relaxed">
-                        The screen is our canvas. We create immersive digital experiences that mirror the haptic luxury of a physical boutique. From interactive brand films to seamless virtual appointments, every touchpoint is a statement of excellence.
-                    </p>
-<ul class="space-y-6 pt-6">
-<li class="flex items-center gap-6 border-b border-surface-container pb-6">
-<span class="font-label text-secondary">01</span>
-<span class="font-body uppercase tracking-widest text-sm">Interactive Lookbooks</span>
-</li>
-<li class="flex items-center gap-6 border-b border-surface-container pb-6">
-<span class="font-label text-secondary">02</span>
-<span class="font-body uppercase tracking-widest text-sm">Cinematic Social Content</span>
-</li>
-<li class="flex items-center gap-6">
-<span class="font-label text-secondary">03</span>
-<span class="font-body uppercase tracking-widest text-sm">Bespoke E-Commerce Journeys</span>
-</li>
-</ul>
-</div>
-</div>
+
+<!-- ══════════════════════════════════════════════════════════════════════
+     SECTION 4 — OUR APPROACH (4 Steps)
+     ══════════════════════════════════════════════════════════════════════ -->
+<section id="method" class="py-28 md:py-40 px-6 md:px-12 bg-primary text-on-primary fade-in-section">
+  <div class="max-w-[1440px] mx-auto">
+    <!-- Section Header -->
+    <div class="text-center max-w-3xl mx-auto mb-20">
+      <span class="inline-block font-label uppercase tracking-[0.3em] text-xs text-[#D4AF37] font-bold mb-4">Our Approach</span>
+      <h2 class="text-4xl md:text-6xl italic mb-6">Marketing Luxury Fashion Brands</h2>
+      <p class="text-white/70 text-lg font-light leading-relaxed">
+        A meticulous four-phase process designed to preserve brand prestige while driving scalable growth across global markets.
+      </p>
+    </div>
+
+    <!-- Steps Grid -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-8">
+
+      <!-- Step 01 -->
+      <div id="method-step-1" class="relative">
+        <div class="flex items-center gap-4 mb-6">
+          <span class="w-16 h-16 flex items-center justify-center border border-[#D4AF37]/40 text-[#D4AF37] font-headline italic text-2xl flex-shrink-0">01</span>
+          <div class="h-[1px] flex-grow bg-gradient-to-r from-[#D4AF37]/40 to-transparent hidden lg:block"></div>
+        </div>
+        <h3 class="text-2xl mb-4 leading-snug">Brand Positioning</h3>
+        <p class="text-white/60 text-sm leading-relaxed font-light">
+          We analyze your place in the luxury fashion brands landscape and define your unique identity — what sets you apart from every other label in the market.
+        </p>
+      </div>
+
+      <!-- Step 02 -->
+      <div id="method-step-2" class="relative">
+        <div class="flex items-center gap-4 mb-6">
+          <span class="w-16 h-16 flex items-center justify-center border border-[#D4AF37]/40 text-[#D4AF37] font-headline italic text-2xl flex-shrink-0">02</span>
+          <div class="h-[1px] flex-grow bg-gradient-to-r from-[#D4AF37]/40 to-transparent hidden lg:block"></div>
+        </div>
+        <h3 class="text-2xl mb-4 leading-snug">Audience Targeting</h3>
+        <p class="text-white/60 text-sm leading-relaxed font-light">
+          We focus on audiences who actively follow high-end fashion brands and premium lifestyles — reaching the people who truly value style, status, and sophistication.
+        </p>
+      </div>
+
+      <!-- Step 03 -->
+      <div id="method-step-3" class="relative">
+        <div class="flex items-center gap-4 mb-6">
+          <span class="w-16 h-16 flex items-center justify-center border border-[#D4AF37]/40 text-[#D4AF37] font-headline italic text-2xl flex-shrink-0">03</span>
+          <div class="h-[1px] flex-grow bg-gradient-to-r from-[#D4AF37]/40 to-transparent hidden lg:block"></div>
+        </div>
+        <h3 class="text-2xl mb-4 leading-snug">Content &amp; Campaign Creation</h3>
+        <p class="text-white/60 text-sm leading-relaxed font-light">
+          We build campaigns that feel aspirational, not promotional. Every piece of content, every ad, every social post is crafted to inspire desire while maintaining your brand's integrity.
+        </p>
+      </div>
+
+      <!-- Step 04 -->
+      <div id="method-step-4" class="relative">
+        <div class="flex items-center gap-4 mb-6">
+          <span class="w-16 h-16 flex items-center justify-center border border-[#D4AF37]/40 text-[#D4AF37] font-headline italic text-2xl flex-shrink-0">04</span>
+        </div>
+        <h3 class="text-2xl mb-4 leading-snug">Growth &amp; Optimization</h3>
+        <p class="text-white/60 text-sm leading-relaxed font-light">
+          We continuously refine your strategy to maintain long-term success in the luxury market. Data-driven adjustments ensure maximum ROI without compromising brand perception.
+        </p>
+      </div>
+    </div>
+  </div>
 </section>
-<!-- Section: Call to Action -->
-<section class="py-32 px-12 bg-white text-center border-t border-surface-container-high">
-<h2 class="text-4xl md:text-6xl font-headline mb-12">Elevate Your Label <span class="italic">to</span> Heritage Status</h2>
-<button class="bg-primary text-on-primary px-16 py-6 font-label uppercase tracking-widest text-sm hover:opacity-80 transition-all">
-                Partner with Luxora
-            </button>
+
+<!-- ══════════════════════════════════════════════════════════════════════
+     SECTION 5 — WHY LUXORA + RESULTS
+     ══════════════════════════════════════════════════════════════════════ -->
+<section id="why-luxora" class="py-28 md:py-40 px-6 md:px-12 bg-surface fade-in-section">
+  <div class="max-w-[1440px] mx-auto">
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-16 lg:gap-24">
+      <!-- Left Column: Why LUXORA -->
+      <div class="lg:col-span-5">
+        <span class="inline-block font-label uppercase tracking-[0.3em] text-xs text-secondary font-bold mb-6">Why Choose LUXORA</span>
+        <h2 class="text-4xl md:text-5xl leading-tight mb-8">The Right <span class="italic text-secondary">Choice</span> for Luxury Fashion</h2>
+        <p class="text-on-surface-variant text-lg font-light leading-relaxed mb-10">
+          In the competitive world of luxury fashion brands, being seen is not enough — you need to be desired. At LUXORA, we help you create a digital presence that reflects elegance, exclusivity, and authority.
+        </p>
+        <a href="/contact.html" class="inline-block bg-primary text-on-primary px-12 py-5 text-xs uppercase tracking-[0.25em] font-bold hover:bg-secondary transition-all duration-300">
+          Get Started
+        </a>
+      </div>
+
+      <!-- Right Column: Benefits List -->
+      <div class="lg:col-span-7">
+        <div class="space-y-0">
+
+          <div id="benefit-specialized" class="py-8 border-b border-outline-variant/30">
+            <div class="flex gap-6 items-start">
+              <span class="material-symbols-outlined text-3xl text-secondary flex-shrink-0 mt-1">diamond</span>
+              <div>
+                <h4 class="text-xl mb-3 font-bold">Specialized in Luxury Fashion Brand Marketing</h4>
+                <p class="text-on-surface-variant text-sm leading-relaxed font-light">Deep understanding of high-end fashion audiences, brand perception, and the nuances that separate luxury from mainstream.</p>
+              </div>
+            </div>
+          </div>
+
+          <div id="benefit-content" class="py-8 border-b border-outline-variant/30">
+            <div class="flex gap-6 items-start">
+              <span class="material-symbols-outlined text-3xl text-secondary flex-shrink-0 mt-1">palette</span>
+              <div>
+                <h4 class="text-xl mb-3 font-bold">Premium Content &amp; Visual Strategy</h4>
+                <p class="text-on-surface-variant text-sm leading-relaxed font-light">Every visual, every word, every campaign is crafted with editorial precision to reflect the calibre of your brand.</p>
+              </div>
+            </div>
+          </div>
+
+          <div id="benefit-perception" class="py-8 border-b border-outline-variant/30">
+            <div class="flex gap-6 items-start">
+              <span class="material-symbols-outlined text-3xl text-secondary flex-shrink-0 mt-1">star</span>
+              <div>
+                <h4 class="text-xl mb-3 font-bold">Focus on Brand Perception, Not Just Traffic</h4>
+                <p class="text-on-surface-variant text-sm leading-relaxed font-light">We build brands people aspire to, not just click on. Perception drives premium — and premium drives lasting revenue.</p>
+              </div>
+            </div>
+          </div>
+
+          <div id="benefit-expertise" class="py-8 border-b border-outline-variant/30">
+            <div class="flex gap-6 items-start">
+              <span class="material-symbols-outlined text-3xl text-secondary flex-shrink-0 mt-1">verified</span>
+              <div>
+                <h4 class="text-xl mb-3 font-bold">Proven Expertise in Luxury Digital Marketing</h4>
+                <p class="text-on-surface-variant text-sm leading-relaxed font-light">From heritage houses to emerging designer labels, our track record speaks for itself across fashion, jewellery, and hospitality.</p>
+              </div>
+            </div>
+          </div>
+
+          <div id="benefit-results" class="py-8">
+            <div class="flex gap-6 items-start">
+              <span class="material-symbols-outlined text-3xl text-secondary flex-shrink-0 mt-1">trending_up</span>
+              <div>
+                <h4 class="text-xl mb-3 font-bold">Results You Can Expect</h4>
+                <p class="text-on-surface-variant text-sm leading-relaxed font-light">Higher rankings for luxury fashion keywords · Increased visibility among high-end audiences · Better engagement &amp; brand recall · Premium lead generation · Strong digital authority.</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
+
+<!-- ══════════════════════════════════════════════════════════════════════
+     SECTION 6 — SEO KEYWORDS MARQUEE
+     ══════════════════════════════════════════════════════════════════════ -->
+<section id="specialisms" class="py-20 bg-surface-container-low overflow-hidden fade-in-section">
+  <div class="text-center mb-12">
+    <span class="inline-block font-label uppercase tracking-[0.3em] text-xs text-secondary font-bold mb-4">What We're Known For</span>
+    <h2 class="text-3xl md:text-5xl italic text-primary">Trusted Across Luxury Fashion</h2>
+  </div>
+
+  <!-- Marquee Row 1 -->
+  <div class="relative w-full overflow-hidden mb-4">
+    <div class="flex whitespace-nowrap animate-marquee">
+      <span class="inline-block mx-4 px-8 py-4 bg-surface-container-lowest text-primary text-xs uppercase tracking-[0.2em] font-bold border border-outline-variant/20">Luxury Fashion Brands</span>
+      <span class="inline-block mx-4 px-8 py-4 bg-surface-container-lowest text-primary text-xs uppercase tracking-[0.2em] font-bold border border-outline-variant/20">Luxury Digital Marketing Services</span>
+      <span class="inline-block mx-4 px-8 py-4 bg-surface-container-lowest text-primary text-xs uppercase tracking-[0.2em] font-bold border border-outline-variant/20">Luxury Clothing Brands</span>
+      <span class="inline-block mx-4 px-8 py-4 bg-surface-container-lowest text-primary text-xs uppercase tracking-[0.2em] font-bold border border-outline-variant/20">High-End Fashion Brands</span>
+      <span class="inline-block mx-4 px-8 py-4 bg-surface-container-lowest text-primary text-xs uppercase tracking-[0.2em] font-bold border border-outline-variant/20">Designer Fashion Brands</span>
+      <!-- Duplicate for seamless loop -->
+      <span class="inline-block mx-4 px-8 py-4 bg-surface-container-lowest text-primary text-xs uppercase tracking-[0.2em] font-bold border border-outline-variant/20">Luxury Fashion Brands</span>
+      <span class="inline-block mx-4 px-8 py-4 bg-surface-container-lowest text-primary text-xs uppercase tracking-[0.2em] font-bold border border-outline-variant/20">Luxury Digital Marketing Services</span>
+      <span class="inline-block mx-4 px-8 py-4 bg-surface-container-lowest text-primary text-xs uppercase tracking-[0.2em] font-bold border border-outline-variant/20">Luxury Clothing Brands</span>
+      <span class="inline-block mx-4 px-8 py-4 bg-surface-container-lowest text-primary text-xs uppercase tracking-[0.2em] font-bold border border-outline-variant/20">High-End Fashion Brands</span>
+      <span class="inline-block mx-4 px-8 py-4 bg-surface-container-lowest text-primary text-xs uppercase tracking-[0.2em] font-bold border border-outline-variant/20">Designer Fashion Brands</span>
+    </div>
+  </div>
+
+  <!-- Marquee Row 2 (reverse direction) -->
+  <div class="relative w-full overflow-hidden">
+    <div class="flex whitespace-nowrap animate-marquee" style="animation-direction: reverse; animation-duration: 35s;">
+      <span class="inline-block mx-4 px-8 py-4 bg-primary text-on-primary text-xs uppercase tracking-[0.2em] font-bold">Luxury Social Media Marketing</span>
+      <span class="inline-block mx-4 px-8 py-4 bg-primary text-on-primary text-xs uppercase tracking-[0.2em] font-bold">SEO for Luxury Brands</span>
+      <span class="inline-block mx-4 px-8 py-4 bg-primary text-on-primary text-xs uppercase tracking-[0.2em] font-bold">Premium Digital Advertising</span>
+      <span class="inline-block mx-4 px-8 py-4 bg-primary text-on-primary text-xs uppercase tracking-[0.2em] font-bold">Luxury Brand Marketing</span>
+      <span class="inline-block mx-4 px-8 py-4 bg-primary text-on-primary text-xs uppercase tracking-[0.2em] font-bold">High-End Digital Marketing</span>
+      <!-- Duplicate for seamless loop -->
+      <span class="inline-block mx-4 px-8 py-4 bg-primary text-on-primary text-xs uppercase tracking-[0.2em] font-bold">Luxury Social Media Marketing</span>
+      <span class="inline-block mx-4 px-8 py-4 bg-primary text-on-primary text-xs uppercase tracking-[0.2em] font-bold">SEO for Luxury Brands</span>
+      <span class="inline-block mx-4 px-8 py-4 bg-primary text-on-primary text-xs uppercase tracking-[0.2em] font-bold">Premium Digital Advertising</span>
+      <span class="inline-block mx-4 px-8 py-4 bg-primary text-on-primary text-xs uppercase tracking-[0.2em] font-bold">Luxury Brand Marketing</span>
+      <span class="inline-block mx-4 px-8 py-4 bg-primary text-on-primary text-xs uppercase tracking-[0.2em] font-bold">High-End Digital Marketing</span>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════════════════════════════
+     SECTION 7 — FAQ
+     ══════════════════════════════════════════════════════════════════════ -->
+<section id="faq" class="py-28 md:py-40 px-6 md:px-12 bg-surface fade-in-section">
+  <div class="max-w-[900px] mx-auto">
+    <div class="text-center mb-16">
+      <span class="inline-block font-label uppercase tracking-[0.3em] text-xs text-secondary font-bold mb-4">FAQ</span>
+      <h2 class="text-4xl md:text-5xl italic text-primary">Luxury Fashion Marketing</h2>
+    </div>
+
+    <div class="space-y-0">
+      <!-- FAQ 1 -->
+      <div class="faq-item border-b border-outline-variant/30 cursor-pointer" onclick="this.classList.toggle('active')">
+        <div class="flex justify-between items-center py-8 gap-4">
+          <h4 class="text-lg font-bold pr-4">What makes marketing for luxury fashion brands different?</h4>
+          <span class="faq-icon text-secondary text-2xl font-light flex-shrink-0 select-none">+</span>
+        </div>
+        <div class="faq-answer">
+          <p class="text-on-surface-variant text-sm leading-relaxed font-light pb-8">
+            Luxury fashion marketing focuses on storytelling, exclusivity, and brand perception rather than mass promotion. Every touchpoint must reinforce desire and prestige, making the approach fundamentally different from mainstream fashion marketing.
+          </p>
+        </div>
+      </div>
+
+      <!-- FAQ 2 -->
+      <div class="faq-item border-b border-outline-variant/30 cursor-pointer" onclick="this.classList.toggle('active')">
+        <div class="flex justify-between items-center py-8 gap-4">
+          <h4 class="text-lg font-bold pr-4">How does SEO for luxury fashion brands help?</h4>
+          <span class="faq-icon text-secondary text-2xl font-light flex-shrink-0 select-none">+</span>
+        </div>
+        <div class="faq-answer">
+          <p class="text-on-surface-variant text-sm leading-relaxed font-light pb-8">
+            It helps your brand appear when users search for premium fashion, increasing visibility among high-value customers. By targeting transactional and aspirational keywords, your brand captures high-intent shoppers at the moment they're ready to discover and purchase.
+          </p>
+        </div>
+      </div>
+
+      <!-- FAQ 3 -->
+      <div class="faq-item border-b border-outline-variant/30 cursor-pointer" onclick="this.classList.toggle('active')">
+        <div class="flex justify-between items-center py-8 gap-4">
+          <h4 class="text-lg font-bold pr-4">Can LUXORA help new fashion brands?</h4>
+          <span class="faq-icon text-secondary text-2xl font-light flex-shrink-0 select-none">+</span>
+        </div>
+        <div class="faq-answer">
+          <p class="text-on-surface-variant text-sm leading-relaxed font-light pb-8">
+            Yes, we specialize in positioning emerging brands to compete with established top luxury fashion brands. From brand identity development to digital launch strategy, we provide the full toolkit needed to establish credibility and attract premium audiences from day one.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════════════════════════════
+     SECTION 8 — FINAL CTA
+     ══════════════════════════════════════════════════════════════════════ -->
+<section id="cta" class="relative py-32 md:py-48 px-6 md:px-12 overflow-hidden fade-in-section">
+  <!-- Background with gradient -->
+  <div class="absolute inset-0 bg-gradient-to-br from-primary via-[#1a1a1a] to-primary"></div>
+  <div class="absolute inset-0 opacity-10" style="background-image: radial-gradient(circle at 20% 50%, #D4AF37 0%, transparent 50%), radial-gradient(circle at 80% 50%, #D4AF37 0%, transparent 50%);"></div>
+
+  <div class="relative z-10 max-w-4xl mx-auto text-center text-white">
+    <span class="inline-block font-label uppercase tracking-[0.3em] text-xs text-[#D4AF37] font-bold mb-6">Build a Brand That Defines Luxury</span>
+    <h2 class="text-4xl md:text-6xl lg:text-7xl font-headline mb-8 leading-tight">
+      Your Brand Becomes More Than a Label — It Becomes an <span class="italic text-[#D4AF37]">Experience</span>
+    </h2>
+    <p class="text-white/70 text-lg md:text-xl font-light leading-relaxed mb-14 max-w-2xl mx-auto">
+      If you want your brand to stand alongside the world's leading luxury fashion brands, LUXORA is your strategic partner. Let's build a brand that people don't just see — but aspire to be part of.
+    </p>
+
+    <div class="flex flex-col sm:flex-row gap-6 justify-center items-center">
+      <a href="/contact.html" id="cta-work-with-us" class="bg-[#D4AF37] text-black px-14 py-6 text-xs uppercase tracking-[0.3em] font-bold hover:bg-[#c9a431] transition-all duration-300 shadow-lg shadow-[#D4AF37]/20">
+        Work With LUXORA
+      </a>
+      <a href="#services" id="cta-view-services" class="text-white border-b border-white/40 pb-2 text-xs uppercase tracking-[0.25em] font-bold hover:text-[#D4AF37] hover:border-[#D4AF37] transition-all duration-300 group">
+        View Our Services
+        <span class="inline-block transition-transform group-hover:translate-x-2 ml-2">→</span>
+      </a>
+    </div>
+  </div>
+</section>
+
 </main>
-<!-- Footer -->
+
+<!-- Footer (Shared Component) -->
 <footer class="w-full border-t border-gray-100 dark:border-gray-900 bg-white dark:bg-black">
 <div class="flex flex-col md:flex-row justify-between items-center px-12 py-16 gap-8 max-w-[1920px] mx-auto">
-<a href="/" class="block"><img src="/logo.png" alt="Luxora" class="h-20 w-auto object-contain scale-[2] md:scale-[2.5] origin-left dark:invert"></a>
-<div class="flex flex-wrap justify-center gap-8">
+<a href="/" class="block"><img src="/logo.png" alt="Luxora" class="w-32 md:w-40 h-auto object-contain transition-all duration-500 hover:scale-105 dark:invert dark:hue-rotate-180 grayscale hover:grayscale-0"></a>
+<div class="flex flex-wrap justify-center gap-10">
 <a class="font-sans uppercase tracking-[0.2em] text-[10px] text-gray-400 dark:text-gray-600 hover:text-yellow-600 transition-colors duration-500" href="#">Privacy Policy</a>
 <a class="font-sans uppercase tracking-[0.2em] text-[10px] text-gray-400 dark:text-gray-600 hover:text-yellow-600 transition-colors duration-500" href="#">Terms of Service</a>
 <a class="font-sans uppercase tracking-[0.2em] text-[10px] text-gray-400 dark:text-gray-600 hover:text-yellow-600 transition-colors duration-500" href="#">Cookie Policy</a>
 <a class="font-sans uppercase tracking-[0.2em] text-[10px] text-gray-400 dark:text-gray-600 hover:text-yellow-600 transition-colors duration-500" href="#">Accessibility</a>
 </div>
-<div class="font-sans uppercase tracking-[0.2em] text-[10px] text-gray-400 dark:text-gray-600">
+<div class="font-sans uppercase tracking-[0.2em] text-[10px] text-gray-400">
                 © 2024 LUXORA HAUTE. ALL RIGHTS RESERVED.
             </div>
 </div>
 </footer>
+
+<!-- Scroll Animation Script -->
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const sections = document.querySelectorAll('.fade-in-section');
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('is-visible');
+      }
+    });
+  }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+
+  sections.forEach(section => observer.observe(section));
+});
+</script>
+
 </body></html>
