@@ -105,11 +105,11 @@
   
 <nav
     class="fixed top-0 w-full z-50 bg-white/90 dark:bg-zinc-950/90 backdrop-blur-xl border-b border-stone-200 dark:border-zinc-800 transition-all duration-300" style="padding-top: env(safe-area-inset-top); padding-left: env(safe-area-inset-left); padding-right: env(safe-area-inset-right);">
-    <div class="max-w-screen-2xl mx-auto h-24 px-6 md:px-12 flex justify-between items-center">
+    <div class="max-w-screen-2xl mx-auto h-16 px-6 md:px-12 flex justify-between items-center">
       <!-- Logo -->
       <a href="/" class="flex-shrink-0 flex items-center transition-transform hover:opacity-80 duration-500">
         <img src="/logo.png" alt="Luxora"
-          class="w-40 md:w-48 lg:w-56 h-auto object-contain transition-transform duration-500 hover:scale-105 dark:invert dark:hue-rotate-180">
+          class="w-32 md:w-36 lg:w-40 h-auto object-contain transition-transform duration-500 hover:scale-105 dark:invert dark:hue-rotate-180">
       </a>
 
       <!-- Desktop Navigation -->
@@ -170,9 +170,11 @@
       </div>
     </div>
 
+    <!-- Mobile Navigation Overlay Backdrop -->
+    <div id="mobile-menu-backdrop" class="fixed inset-0 bg-black/60 z-40 hidden opacity-0 transition-opacity duration-500 backdrop-blur-sm"></div>
+
     <!-- Mobile Navigation Overlay -->
-    <div id="mobile-menu"
-      class="hidden fixed inset-0 bg-white dark:bg-zinc-950 z-50 transform translate-x-full transition-transform duration-500 ease-in-out flex flex-col pt-32 px-6 h-[100dvh] overflow-y-auto w-full" style="padding-top: calc(8rem + env(safe-area-inset-top)); padding-bottom: env(safe-area-inset-bottom);">
+    <div id="mobile-menu" class="hidden fixed top-0 right-0 bg-white dark:bg-zinc-950 z-[55] transform translate-x-full transition-transform duration-500 ease-in-out flex flex-col pt-32 px-6 h-[100dvh] overflow-y-auto w-[80%] shadow-[-10px_0_30px_rgba(0,0,0,0.1)]" style="padding-top: calc(6rem + env(safe-area-inset-top)); padding-bottom: env(safe-area-inset-bottom);">
       <div class="flex flex-col space-y-8 pb-12 text-right">
         <a class="font-serif italic text-3xl text-[#D4AF37] border-b border-stone-200 dark:border-zinc-800 pb-4 block w-full text-right" href="/">Home</a>
         <a class="font-serif italic text-3xl text-[#D4AF37] border-b border-stone-200 dark:border-zinc-800 pb-4 block w-full text-right" href="/about.html">About</a>
@@ -199,7 +201,7 @@
     </div>
   </nav>
 
-  <main class="pt-24 pb-24 px-6 md:px-12 max-w-screen-2xl mx-auto">
+  <main class="pt-16 pb-24 px-6 md:px-12 max-w-screen-2xl mx-auto">
     <!-- Header Section -->
     <header class="mb-12 text-center md:text-left">
       <label class="font-label uppercase text-[10px] tracking-[0.2em] font-medium text-secondary mb-6 block">Inquiry
@@ -253,17 +255,16 @@
     </div>
   </main>
   <!-- Footer -->
-  <footer
-    class="w-full py-20 px-6 md:px-12 border-t border-stone-200 dark:border-zinc-800 bg-stone-50 dark:bg-zinc-950">
-    <div class="grid grid-cols-1 md:grid-cols-4 gap-8 md:p-12 w-full max-w-screen-2xl mx-auto">
-      <div class="col-span-1">
+  <footer class="w-full py-12 px-6 md:px-12 border-t border-stone-200 dark:border-zinc-800 bg-stone-50 dark:bg-zinc-950">
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-x-8 gap-y-12 w-full max-w-screen-2xl mx-auto">
+      <div class="col-span-2 md:col-span-1">
         <a href="/" class="block mb-6"><img loading="lazy" decoding="async" src="/logo.png" alt="Luxora"
             class="w-32 md:w-40 h-auto object-contain transition-all duration-500 hover:scale-105 dark:invert dark:hue-rotate-180 grayscale hover:grayscale-0"></a>
         <p class="text-stone-400 dark:text-zinc-500 font-sans uppercase tracking-[0.15em] text-[10px] leading-relaxed">
           © 2024 LUXORA. Where fashion brands become premium brands.
         </p>
       </div>
-      <div class="space-y-4">
+      <div class="col-span-1 space-y-4">
         <h5 class="text-black dark:text-white font-bold font-sans uppercase tracking-[0.15em] text-[10px]">Services</h5>
         <ul class="space-y-2">
           <li><a
@@ -277,7 +278,7 @@
               href="#">Identity</a></li>
         </ul>
       </div>
-      <div class="space-y-4">
+      <div class="col-span-1 space-y-4">
         <h5 class="text-black dark:text-white font-bold font-sans uppercase tracking-[0.15em] text-[10px]">Company</h5>
         <ul class="space-y-2">
           <li><a
@@ -289,28 +290,18 @@
         </ul>
       </div>
 
-      <div class="space-y-4">
+      <div class="col-span-2 md:col-span-1 space-y-4">
         <h5 class="text-black dark:text-white font-bold font-sans uppercase tracking-[0.15em] text-[10px]">Socials</h5>
-        <ul class="space-y-2">
-          <li><a
-              class="text-stone-400 dark:text-zinc-500 hover:text-amber-700 dark:hover:text-amber-500 transition-all font-sans uppercase tracking-[0.15em] text-[10px]"
-              href="https://www.facebook.com/luxoradigitalmarketing/" target="_blank">Facebook</a></li>
-          <li><a
-              class="text-stone-400 dark:text-zinc-500 hover:text-amber-700 dark:hover:text-amber-500 transition-all font-sans uppercase tracking-[0.15em] text-[10px]"
-              href="https://www.instagram.com/luxora_digitalmarketing?igsh=N3Zkcm40cmN5NnM="
-              target="_blank">Instagram</a></li>
-        </ul>
-      </div>
-      <div class="space-y-6">
-        <h5 class="text-black dark:text-white font-bold font-sans uppercase tracking-[0.15em] text-[10px]">Newsletter
-        </h5>
-        <div class="flex border-b border-stone-300 dark:border-zinc-700 pb-2">
-          <input
-            class="bg-transparent border-none focus:ring-0 w-full font-sans uppercase tracking-[0.15em] text-[10px]"
-            placeholder="YOUR EMAIL" type="email">
-          <button class="text-black dark:text-white uppercase tracking-[0.15em] text-[10px] font-bold">Join</button>
+        <div class="flex items-center space-x-6">
+          <a class="text-stone-400 dark:text-zinc-500 hover:text-amber-700 dark:hover:text-amber-500 transition-all" href="https://www.facebook.com/luxoradigitalmarketing/" target="_blank" aria-label="Facebook">
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+          </a>
+          <a class="text-stone-400 dark:text-zinc-500 hover:text-amber-700 dark:hover:text-amber-500 transition-all" href="https://www.instagram.com/luxora_digitalmarketing?igsh=N3Zkcm40cmN5NnM=" target="_blank" aria-label="Instagram">
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+          </a>
         </div>
       </div>
+      
     </div>
   </footer>
   <script src="https://link.msgsndr.com/js/form_embed.js"></script>
@@ -319,10 +310,21 @@
     document.addEventListener("DOMContentLoaded", () => {
       const mobileMenuButton = document.getElementById('mobile-menu-button');
       const mobileMenu = document.getElementById('mobile-menu');
+      const backdrop = document.getElementById('mobile-menu-backdrop');
       let isMenuOpen = false;
 
+      const closeMenu = () => {
+        isMenuOpen = false;
+        mobileMenu.classList.add('translate-x-full');
+        mobileMenuButton.innerHTML = `<svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>`;
+        document.body.style.overflow = '';
+        if (backdrop) {
+          backdrop.classList.remove('opacity-100');
+          setTimeout(() => backdrop.classList.add('hidden'), 500);
+        }
+      };
+
       if (mobileMenuButton && mobileMenu) {
-        // Initialize as hidden but in DOM
         mobileMenu.classList.remove('hidden');
 
         mobileMenuButton.addEventListener('click', () => {
@@ -330,13 +332,19 @@
           if (isMenuOpen) {
             mobileMenu.classList.remove('translate-x-full');
             mobileMenuButton.innerHTML = `<svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>`;
-            document.body.style.overflow = 'hidden'; // Prevent background scrolling
+            document.body.style.overflow = 'hidden';
+            if (backdrop) {
+              backdrop.classList.remove('hidden');
+              setTimeout(() => backdrop.classList.add('opacity-100'), 10);
+            }
           } else {
-            mobileMenu.classList.add('translate-x-full');
-            mobileMenuButton.innerHTML = `<svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>`;
-            document.body.style.overflow = '';
+            closeMenu();
           }
         });
+
+        if (backdrop) {
+          backdrop.addEventListener('click', closeMenu);
+        }
       }
     });
   </script>
