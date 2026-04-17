@@ -14,7 +14,8 @@ export default defineConfig({
         premiumEthnicWear: resolve(__dirname, 'premium-ethnic-wear.html'),
         coutureWeddingWear: resolve(__dirname, 'couture-wedding-wear.html'),
         bespokeTailoring: resolve(__dirname, 'bespoke-tailoring.html'),
-        luxuryFashionBrands: resolve(__dirname, 'luxury-fashion-brands.html')
+        luxuryFashionBrands: resolve(__dirname, 'luxury-fashion-brands.html'),
+        privacyPolicy: resolve(__dirname, 'privacy-policy.html')
       }
     }
   }
