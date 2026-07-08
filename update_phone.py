@@ -4,10 +4,13 @@ directory = "/Users/atharvalepse/Documents/Luxora"
 html_files = [f for f in os.listdir(directory) if f.endswith(".html")]
 
 replacements = {
-    "+1 (800) LUXORA": "+1 (984) 374-9646",
-    "+1(800)LUXORA": "+1(984)3749646",
-    "tel:+1800LUXORA": "tel:+19843749646",
-    "tel:1800LUXORA": "tel:19843749646",
+    "+1 (800) LUXORA": "+1 (919) 949-0131",
+    "+1(800)LUXORA": "+1(919)9490131",
+    "tel:+1800LUXORA": "tel:+19199490131",
+    "tel:1800LUXORA": "tel:19199490131",
+    "+1 (984) 374-9646": "+1 (919) 949-0131",
+    "+1(984)3749646": "+1(919)9490131",
+    "tel:+19843749646": "tel:+19199490131",
 }
 
 for file in html_files:

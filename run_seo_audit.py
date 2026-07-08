@@ -39,7 +39,7 @@ org_schema = """<script type="application/ld+json">
  "url": "https://luxoradigitalmarketing.com",
  "logo": "https://luxoradigitalmarketing.com/logo.png",
  "description": "Luxury fashion brand marketing agency specialising in premium clothing labels, designer boutiques, and couture brands.",
- "telephone": "+19843749646",
+ "telephone": "+19199490131",
  "email": "contact@luxoradigitalmarketing.com",
  "address": {
    "@type": "PostalAddress",
